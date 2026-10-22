@@ -65,3 +65,12 @@ If feasible, the analysis will be extended to other large U.S. bank holding comp
 •	Final stage: Select and validate the preferred models, interpret the results, and complete the final report and presentation.
 
 
+
+
+## Running the current R analysis (Domestic only)
+
+The working code is on branch `ppnr-portable-analysis-2026-10-22`. After cloning/checking out that branch, open `Morgan_Stanley_Macroeconomics.Rproj` in RStudio and Source `run_ppnr.R`.
+
+The active input is the **2025 Fed Historic Domestic** dataset (16 US macro variables). The original Domestic CSV is included. The analysis reads files from the local Git clone; update with `git pull`. Large searches are opt-in. See [the setup and source notes](ppnr_domestic/README.md).
+
+The earlier combined Domestic/International workflow in `ppnr/` is retained for reproducibility and is not the active Domestic-only workflow.

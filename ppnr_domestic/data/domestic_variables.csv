@@ -1,0 +1,17 @@
+r_name,source_column,unit
+us_real_gdp_growth,Real GDP growth,annualized percent
+us_nominal_gdp_growth,Nominal GDP growth,annualized percent
+us_real_disposable_income_growth,Real disposable income growth,annualized percent
+us_nominal_disposable_income_growth,Nominal disposable income growth,annualized percent
+us_unemployment_rate,Unemployment rate,percent
+us_cpi_inflation,CPI inflation rate,annualized percent
+us_treasury_3m,3-month Treasury rate,percent
+us_treasury_5y,5-year Treasury yield,percent
+us_treasury_10y,10-year Treasury yield,percent
+us_bbb_corporate_yield,BBB corporate yield,percent
+us_mortgage_rate,Mortgage rate,percent
+us_prime_rate,Prime rate,percent
+us_dow_jones_total_market,Dow Jones Total Stock Market Index (Level),index level
+us_house_price_index,House Price Index (Level),index level
+us_cre_price_index,Commercial Real Estate Price Index (Level),index level
+us_vix_max,Market Volatility Index (Level),index points

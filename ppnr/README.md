@@ -1,3 +1,5 @@
+> **Previous combined-input workflow (Domestic + International).** For the current Domestic-only analysis, use [ppnr_domestic/README.md](../ppnr_domestic/README.md) and the repository-root `run_ppnr.R`. This folder is retained to reproduce earlier results.
+
 # Morgan Stanley PPNR analysis
 
 Exploratory OLS models using Federal Reserve **2025 historical data** and 60 matched quarters, **2010 Q1–2024 Q4**. PPNR is interest income minus interest expense, plus noninterest income minus noninterest expense; model outputs use USD billions per quarter.
