@@ -1,0 +1,5 @@
+"model","n","RMSE"
+"Selected horizon models",54,1.48281665837979
+"Naive",54,1.98352636782369
+"Seasonal_naive",54,1.84575275720795
+"AR1",54,2.13728226409427

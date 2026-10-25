@@ -1,0 +1,97 @@
+"factors","free_regressors","horizon","target","model_type","estimation","selection_n","selection_RMSE","selection_MAE","variables","fixed_PPNR_baseline","rank","model_id","check_RMSE","check_MAE","check_n"
+1,0,1,"change","AR","OLS",20,0.798627804897509,0.636381067630241,"",TRUE,1,"K1_H1_R1",1.08094901634089,0.863841568890132,8
+1,1,1,"level","Macro OLS","OLS",20,0.913735072941726,0.751983441785315,"log_us_dow_jones_total_market",FALSE,2,"K1_H1_R2",0.796029831735013,0.59455264670192,8
+1,1,1,"level","Macro OLS","OLS",20,0.946806089988968,0.74977866358181,"log_us_house_price_index",FALSE,3,"K1_H1_R3",1.14431268579975,0.831662671823339,8
+2,1,1,"change","AR","OLS",20,0.747814801204102,0.572505408754578,"d_PPNR",TRUE,1,"K2_H1_R1",0.869985506877666,0.740168454591589,8
+2,1,1,"change","ARX","OLS",20,0.779715696371726,0.606075451098115,"us_nominal_disposable_income_growth",TRUE,2,"K2_H1_R2",1.06480369504376,0.838147496795961,8
+2,1,1,"change","ARX","OLS",20,0.783102996325377,0.618033262050118,"d_us_bbb_corporate_yield",TRUE,3,"K2_H1_R3",1.14730565559324,0.932392280552412,8
+3,3,1,"level","Macro OLS","OLS",20,0.585231215445847,0.478264698272326,"log_us_dow_jones_total_market;us_vix_max;d_credit_spread",FALSE,1,"K3_H1_R1",0.800655799451147,0.52006912506633,8
+3,2,1,"change","ARX","OLS",20,0.678160944991325,0.509865721001354,"d_us_mortgage_rate;d_PPNR",TRUE,2,"K3_H1_R2",0.95589021346112,0.779882366621671,8
+3,3,1,"level","Macro OLS","OLS",20,0.702776312476467,0.566615662021597,"log_us_dow_jones_total_market;log_us_cre_price_index;us_vix_max",FALSE,3,"K3_H1_R3",0.722552775756738,0.627365758753102,8
+4,4,1,"level","Macro OLS","OLS",20,0.526043188894485,0.470672173999674,"log_us_dow_jones_total_market;us_vix_max;credit_spread;d_credit_spread",FALSE,1,"K4_H1_R1",0.709493804626266,0.500870139902772,8
+4,4,1,"level","Macro OLS","OLS",20,0.585015521546457,0.473900194713188,"us_nominal_disposable_income_growth;log_us_dow_jones_total_market;us_vix_max;d_credit_spread",FALSE,2,"K4_H1_R2",0.791893212467121,0.513933860020025,8
+4,4,1,"level","ARX","OLS",20,0.58539561496771,0.47898441703918,"log_us_dow_jones_total_market;us_vix_max;d_credit_spread;d_PPNR",FALSE,3,"K4_H1_R3",0.802365945631054,0.521244842197992,8
+5,5,1,"level","Macro OLS","OLS",20,0.527417977487793,0.458755954593456,"log_us_dow_jones_total_market;us_vix_max;credit_spread;term_spread;d_credit_spread",FALSE,1,"K5_H1_R1",0.657685298122951,0.506249182363027,8
+5,5,1,"level","ARX","OLS",20,0.529970237370711,0.475175528097805,"log_us_dow_jones_total_market;us_vix_max;credit_spread;d_credit_spread;d_PPNR",FALSE,2,"K5_H1_R2",0.707023935079099,0.492524774293639,8
+5,5,1,"level","Macro OLS","OLS",20,0.533038644596086,0.474562169161812,"log_us_dow_jones_total_market;us_vix_max;credit_spread;d_credit_spread;d_term_spread",FALSE,3,"K5_H1_R3",0.722154784627593,0.503837997036347,8
+6,6,1,"level","Macro OLS","OLS",20,0.528093699411287,0.456750290650021,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_10y;d_us_bbb_corporate_yield;credit_spread;term_spread",FALSE,1,"K6_H1_R1",0.67681002839958,0.525625991903747,8
+6,6,1,"level","Macro OLS","OLS",20,0.528093699411287,0.456750290650021,"log_us_dow_jones_total_market;us_vix_max;d_us_bbb_corporate_yield;credit_spread;term_spread;d_credit_spread",FALSE,2,"K6_H1_R2",0.67681002839958,0.525625991903748,8
+6,6,1,"level","Macro OLS","OLS",20,0.528093699411287,0.456750290650021,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_10y;credit_spread;term_spread;d_credit_spread",FALSE,3,"K6_H1_R3",0.676810028399581,0.525625991903748,8
+7,7,1,"level","ARX","OLS",20,0.530534442554696,0.428779966416602,"log_us_dow_jones_total_market;us_vix_max;credit_spread;term_spread;d_credit_spread;PPNR;d_PPNR",FALSE,1,"K7_H1_R1",0.628006253703808,0.498736242809018,8
+7,7,1,"level","ARX","OLS",20,0.530651079044474,0.463057153903136,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_10y;d_us_bbb_corporate_yield;credit_spread;term_spread;PPNR",FALSE,2,"K7_H1_R2",0.631126921867063,0.504997104122257,8
+7,7,1,"level","ARX","OLS",20,0.530651079044474,0.463057153903136,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_10y;credit_spread;term_spread;d_credit_spread;PPNR",FALSE,3,"K7_H1_R3",0.631126921867064,0.504997104122257,8
+8,8,1,"level","ARX","OLS",20,0.517783523364757,0.441469421548914,"log_us_dow_jones_total_market;log_us_cre_price_index;us_vix_max;d_us_treasury_5y;d_us_bbb_corporate_yield;credit_spread;PPNR;d_PPNR",FALSE,1,"K8_H1_R1",0.764472332243138,0.606803666720691,8
+8,8,1,"level","ARX","OLS",20,0.52805810384323,0.440395001564763,"log_us_dow_jones_total_market;us_vix_max;d_us_mortgage_rate;credit_spread;term_spread;d_credit_spread;PPNR;d_PPNR",FALSE,2,"K8_H1_R2",0.717402590977092,0.615214611789824,8
+8,8,1,"level","ARX","OLS",20,0.531511251780066,0.435928499077803,"log_us_dow_jones_total_market;us_vix_max;d_us_bbb_corporate_yield;credit_spread;term_spread;d_credit_spread;PPNR;d_PPNR",FALSE,3,"K8_H1_R3",0.651217515788445,0.538730494414991,8
+1,0,2,"change","AR","OLS",19,0.902382519795834,0.732120585063649,"",TRUE,1,"K1_H2_R1",0.995389596645595,0.804435720417326,7
+1,1,2,"level","Macro OLS","OLS",19,0.992422558056614,0.852535083190555,"log_us_dow_jones_total_market",FALSE,2,"K1_H2_R2",0.868925093832765,0.636669022715655,7
+1,1,2,"level","Macro OLS","OLS",19,1.04723175026009,0.810276441254473,"log_us_house_price_index",FALSE,3,"K1_H2_R3",1.30352118479764,0.985523176121874,7
+2,1,2,"change","ARX","OLS",19,0.855772396213285,0.684029703193769,"d_credit_spread",TRUE,1,"K2_H2_R1",0.987918917469354,0.806972360740501,7
+2,2,2,"level","Macro OLS","OLS",19,0.861681949392434,0.69263305242679,"log_us_dow_jones_total_market;us_vix_max",FALSE,2,"K2_H2_R2",0.87575879899468,0.740520975802307,7
+2,1,2,"change","ARX","OLS",19,0.898926076698072,0.742945977042147,"us_treasury_10y",TRUE,3,"K2_H2_R3",1.09322577462275,0.845984297219803,7
+3,3,2,"level","Macro OLS","OLS",19,0.695756406800441,0.594261057145944,"log_us_dow_jones_total_market;us_vix_max;d_credit_spread",FALSE,1,"K3_H2_R1",0.869104590776516,0.682714291737993,7
+3,3,2,"level","Macro OLS","OLS",19,0.749768645551985,0.62891799512849,"log_us_dow_jones_total_market;us_vix_max;return_us_dow_jones_total_market",FALSE,2,"K3_H2_R2",0.985597228072436,0.805262188499275,7
+3,3,2,"level","Macro OLS","OLS",19,0.799273053201245,0.694318221900696,"log_us_dow_jones_total_market;d_us_bbb_corporate_yield;d_term_spread",FALSE,3,"K3_H2_R3",0.708447082907021,0.511793711441693,7
+4,4,2,"level","Macro OLS","OLS",19,0.646980123800846,0.536596157060979,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_3m;d_credit_spread",FALSE,1,"K4_H2_R1",0.733585572715408,0.526043907475769,7
+4,4,2,"level","Macro OLS","OLS",19,0.663960737003914,0.556084583032626,"log_us_dow_jones_total_market;us_vix_max;return_us_dow_jones_total_market;d_credit_spread",FALSE,2,"K4_H2_R2",0.934080477100867,0.739158369344794,7
+4,4,2,"level","Macro OLS","OLS",19,0.677091788495991,0.523628273644394,"us_unemployment_rate;log_us_dow_jones_total_market;us_vix_max;d_credit_spread",FALSE,3,"K4_H2_R3",0.836331846691372,0.648524142772654,7
+5,5,2,"level","ARX","OLS",19,0.6228823157691,0.507343744986516,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_3m;d_credit_spread;d_PPNR",FALSE,1,"K5_H2_R1",0.741326308377759,0.535083102214541,7
+5,5,2,"level","ARX","OLS",19,0.649145229623475,0.53625922530176,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_3m;d_credit_spread;PPNR",FALSE,2,"K5_H2_R2",0.75093880630223,0.536392400061057,7
+5,5,2,"level","ARX","OLS",19,0.654031459887962,0.550971305612981,"log_us_dow_jones_total_market;us_vix_max;return_us_dow_jones_total_market;d_credit_spread;d_PPNR",FALSE,3,"K5_H2_R3",0.94622351138158,0.753324610758611,7
+6,6,2,"level","ARX","OLS",19,0.629075814893334,0.515993606541593,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_3m;credit_spread;d_credit_spread;d_PPNR",FALSE,1,"K6_H2_R1",0.747879909948733,0.534419214003673,7
+6,6,2,"level","ARX","OLS",19,0.634346032833705,0.519985265407798,"log_us_dow_jones_total_market;us_vix_max;d_us_treasury_3m;d_credit_spread;PPNR;d_PPNR",FALSE,2,"K6_H2_R2",0.745160953829302,0.536451285043683,7
+6,5,2,"change","ARX","OLS",19,0.634871622575377,0.568745932316754,"us_cpi_inflation;us_treasury_10y;d_credit_spread;d_term_spread;d_PPNR",TRUE,3,"K6_H2_R3",1.11358722849518,1.04350545232655,7
+7,6,2,"change","ARX","OLS",19,0.597260288766836,0.481270314448089,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_cre_price_index;d_credit_spread;d_term_spread;d_PPNR",TRUE,1,"K7_H2_R1",0.799819004805173,0.63812428685794,7
+7,6,2,"change","ARX","OLS",19,0.601391984724991,0.486198381055749,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_dow_jones_total_market;d_credit_spread;d_term_spread;d_PPNR",TRUE,2,"K7_H2_R2",0.769915013293159,0.620853943035348,7
+7,6,2,"change","ARX","OLS",19,0.605816004029365,0.48635900329756,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_house_price_index;d_credit_spread;d_term_spread;d_PPNR",TRUE,3,"K7_H2_R3",0.77191521164504,0.588277203983816,7
+8,7,2,"change","ARX","OLS",19,0.585565517074704,0.47142626184476,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_cre_price_index;us_vix_max;d_credit_spread;d_term_spread;d_PPNR",TRUE,1,"K8_H2_R1",0.811718532521669,0.665495623822741,7
+8,7,2,"change","ARX","OLS",19,0.59891515387544,0.48422372761897,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_dow_jones_total_market;us_vix_max;d_credit_spread;d_term_spread;d_PPNR",TRUE,2,"K8_H2_R2",0.768339491812726,0.62383656363823,7
+8,7,2,"change","ARX","OLS",19,0.60070012176875,0.484637794880839,"us_nominal_disposable_income_growth;us_cpi_inflation;log_us_dow_jones_total_market;log_us_cre_price_index;d_credit_spread;d_term_spread;d_PPNR",TRUE,3,"K8_H2_R3",0.897294983655887,0.739487097480676,7
+1,0,3,"change","AR","OLS",18,1.10063536114294,0.888694238144377,"",TRUE,1,"K1_H3_R1",1.3601817431636,1.14975871413518,6
+1,1,3,"level","Macro OLS","OLS",18,1.125439658365,0.896417554918552,"log_us_house_price_index",FALSE,2,"K1_H3_R2",1.3486027644762,0.99197616160804,6
+1,1,3,"level","Macro OLS","OLS",18,1.14448951037854,0.953391048621549,"log_us_cre_price_index",FALSE,3,"K1_H3_R3",1.14117278845148,0.927839591857113,6
+2,1,3,"change","ARX","OLS",18,0.936288538838612,0.806794904295315,"us_cpi_inflation",TRUE,1,"K2_H3_R1",1.37245173306223,1.2425675435941,6
+2,2,3,"level","Macro OLS","OLS",18,0.975328492782936,0.818940108179988,"log_us_dow_jones_total_market;d_us_bbb_corporate_yield",FALSE,2,"K2_H3_R2",0.991173783461155,0.560735791487321,6
+2,2,3,"level","Macro OLS","OLS",18,0.986164944317143,0.856835263063359,"log_us_house_price_index;d_us_treasury_5y",FALSE,3,"K2_H3_R3",1.43879146996939,0.905922856668333,6
+3,2,3,"change","ARX","OLS",18,0.765152942033418,0.651652835651422,"us_cpi_inflation;d_PPNR",TRUE,1,"K3_H3_R1",1.24330127661724,1.11789698048482,6
+3,3,3,"level","Macro OLS","OLS",18,0.833443161363631,0.684023095699888,"log_us_house_price_index;d_us_mortgage_rate;d_term_spread",FALSE,2,"K3_H3_R2",1.33621391315864,1.06205055028151,6
+3,2,3,"change","ARX","OLS",18,0.84347619659498,0.700972586635098,"us_real_gdp_growth;us_cpi_inflation",TRUE,3,"K3_H3_R3",1.36932847356008,1.24697970025271,6
+4,3,3,"change","ARX","OLS",18,0.714022764036301,0.582377934763979,"us_cpi_inflation;us_treasury_10y;d_PPNR",TRUE,1,"K4_H3_R1",1.542646352529,1.42190316954493,6
+4,3,3,"change","ARX","OLS",18,0.715405251551085,0.582628712734822,"us_cpi_inflation;d_term_spread;d_PPNR",TRUE,2,"K4_H3_R2",1.19230279204288,1.07663366755671,6
+4,3,3,"change","ARX","OLS",18,0.71961043181508,0.633741134120111,"us_cpi_inflation;d_us_mortgage_rate;d_PPNR",TRUE,3,"K4_H3_R3",1.31741285970179,1.25056484328281,6
+5,4,3,"change","ARX","OLS",18,0.62227910893209,0.521867468650122,"us_cpi_inflation;us_mortgage_rate;return_us_cre_price_index;d_PPNR",TRUE,1,"K5_H3_R1",1.74954296608836,1.60530209558006,6
+5,4,3,"change","ARX","OLS",18,0.64814269969838,0.563498263479868,"us_real_gdp_growth;us_nominal_gdp_growth;us_mortgage_rate;d_PPNR",TRUE,2,"K5_H3_R2",1.86585592363419,1.70487446488026,6
+5,4,3,"change","ARX","OLS",18,0.650214949872483,0.52764507755706,"us_cpi_inflation;us_treasury_10y;return_us_cre_price_index;d_PPNR",TRUE,3,"K5_H3_R3",1.43566978087355,1.34150885352564,6
+6,5,3,"change","ARX","OLS",18,0.56327632404895,0.466005598176808,"us_cpi_inflation;us_mortgage_rate;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,1,"K6_H3_R1",1.92942420272261,1.78164780474253,6
+6,5,3,"change","ARX","OLS",18,0.567631873281873,0.442572732323782,"us_cpi_inflation;us_bbb_corporate_yield;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,2,"K6_H3_R2",1.44916899233217,1.41055196057849,6
+6,5,3,"change","ARX","OLS",18,0.592113164083513,0.482341602465562,"us_cpi_inflation;us_treasury_10y;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,3,"K6_H3_R3",1.59574186390673,1.55676786902108,6
+7,6,3,"change","ARX","OLS",18,0.509521165352344,0.388009327668019,"us_unemployment_rate;us_cpi_inflation;us_mortgage_rate;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,1,"K7_H3_R1",1.75617221243047,1.65736929518618,6
+7,6,3,"change","ARX","OLS",18,0.521291530387164,0.418127162910116,"us_cpi_inflation;us_treasury_5y;us_mortgage_rate;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,2,"K7_H3_R2",1.97505691055872,1.81974620200463,6
+7,6,3,"change","ARX","OLS",18,0.548295814753651,0.406531608459684,"us_real_gdp_growth;us_nominal_gdp_growth;us_cpi_inflation;us_treasury_10y;d_term_spread;d_PPNR",TRUE,3,"K7_H3_R3",1.55730258041773,1.38158614147876,6
+8,7,3,"change","ARX","OLS",18,0.512544516382917,0.401661614458787,"us_real_gdp_growth;us_cpi_inflation;return_us_house_price_index;return_us_cre_price_index;d_us_mortgage_rate;d_term_spread;d_PPNR",TRUE,1,"K8_H3_R1",1.68165940472323,1.33431009070636,6
+8,7,3,"change","ARX","OLS",18,0.51983735376456,0.395441306481842,"us_cpi_inflation;us_treasury_5y;us_mortgage_rate;log_us_house_price_index;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,2,"K8_H3_R2",1.82197131327519,1.48934380499865,6
+8,7,3,"change","ARX","OLS",18,0.522762190967473,0.400870730134477,"us_unemployment_rate;us_cpi_inflation;us_mortgage_rate;return_us_house_price_index;return_us_cre_price_index;d_us_bbb_corporate_yield;d_PPNR",TRUE,3,"K8_H3_R3",1.54924043714821,1.4391513561911,6
+1,1,4,"level","Macro OLS","OLS",17,1.1570242123722,0.974826307078925,"log_us_house_price_index",FALSE,1,"K1_H4_R1",1.47734194273787,1.09374753258432,5
+1,1,4,"level","Macro OLS","OLS",17,1.16539838558599,0.938970511898783,"log_us_cre_price_index",FALSE,2,"K1_H4_R2",1.1554582131056,0.801308324462723,5
+1,1,4,"level","Macro OLS","OLS",17,1.2215183231183,1.00432843189649,"log_us_dow_jones_total_market",FALSE,3,"K1_H4_R3",0.882954914318463,0.654726997283418,5
+2,2,4,"level","ARX","OLS",17,1.02495094085009,0.788190862988576,"term_spread;PPNR",FALSE,1,"K2_H4_R1",1.13546336659191,1.02945129298523,5
+2,2,4,"level","Macro OLS","OLS",17,1.06922897002883,0.909983323928856,"log_us_house_price_index;credit_spread",FALSE,2,"K2_H4_R2",1.7781650973969,1.34678842038374,5
+2,2,4,"level","Macro OLS","OLS",17,1.07206192419783,0.877759835356494,"log_us_house_price_index;d_us_treasury_3m",FALSE,3,"K2_H4_R3",0.6154230309064,0.431620135532145,5
+3,3,4,"level","Macro OLS","OLS",17,0.916522091366746,0.76446462175852,"us_treasury_10y;log_us_house_price_index;return_us_house_price_index",FALSE,1,"K3_H4_R1",1.58488764146104,1.23324856189045,5
+3,3,4,"level","ARX","OLS",17,0.925053162734051,0.708339382143368,"term_spread;d_term_spread;PPNR",FALSE,2,"K3_H4_R2",0.915065815201772,0.776312102917986,5
+3,3,4,"level","ARX","OLS",17,0.972956823759832,0.766115568997209,"term_spread;PPNR;d_PPNR",FALSE,3,"K3_H4_R3",1.11700104393605,0.970498629542058,5
+4,4,4,"level","Macro OLS","OLS",17,0.84965668065386,0.687320310878807,"us_treasury_10y;log_us_dow_jones_total_market;log_us_house_price_index;return_us_house_price_index",FALSE,1,"K4_H4_R1",1.81659239610681,1.45640748932403,5
+4,4,4,"level","Macro OLS","OLS",17,0.85146087772461,0.689290945542457,"us_treasury_10y;log_us_house_price_index;return_us_house_price_index;d_term_spread",FALSE,2,"K4_H4_R2",1.3252704777873,1.06504198697737,5
+4,4,4,"level","Macro OLS","OLS",17,0.864525430703061,0.715478730393846,"us_treasury_10y;log_us_house_price_index;return_us_house_price_index;d_credit_spread",FALSE,3,"K4_H4_R3",1.54101488314946,1.20287376124965,5
+5,5,4,"level","ARX","OLS",17,0.780283803145589,0.647288233699281,"d_us_bbb_corporate_yield;term_spread;d_term_spread;PPNR;d_PPNR",FALSE,1,"K5_H4_R1",0.688719007277623,0.599711969059041,5
+5,5,4,"level","Macro OLS","OLS",17,0.784212710231228,0.619792722229923,"us_treasury_10y;log_us_dow_jones_total_market;log_us_house_price_index;return_us_house_price_index;d_term_spread",FALSE,2,"K5_H4_R2",1.53608522003594,1.14563994478609,5
+5,5,4,"level","ARX","OLS",17,0.788974392923391,0.629878580780135,"credit_spread;term_spread;d_term_spread;PPNR;d_PPNR",FALSE,3,"K5_H4_R3",1.07690639107138,0.897472045613181,5
+6,5,4,"change","ARX","OLS",17,0.705240632047568,0.557342905349797,"us_unemployment_rate;us_cpi_inflation;d_us_bbb_corporate_yield;d_term_spread;d_PPNR",TRUE,1,"K6_H4_R1",1.1342507842683,1.08578191157634,5
+6,6,4,"level","ARX","OLS",17,0.742632690192306,0.623379961061434,"us_cpi_inflation;d_us_bbb_corporate_yield;term_spread;d_term_spread;PPNR;d_PPNR",FALSE,2,"K6_H4_R2",0.462764150142095,0.452261118203769,5
+6,6,4,"level","ARX","OLS",17,0.744870793982611,0.608345701893812,"d_us_bbb_corporate_yield;credit_spread;term_spread;d_term_spread;PPNR;d_PPNR",FALSE,3,"K6_H4_R3",0.89048306110715,0.777965611447094,5
+7,6,4,"change","ARX","OLS",17,0.691032295979495,0.525884210276142,"us_real_disposable_income_growth;us_unemployment_rate;us_cpi_inflation;d_us_bbb_corporate_yield;d_term_spread;d_PPNR",TRUE,1,"K7_H4_R1",1.17984317277454,1.13026883767338,5
+7,6,4,"change","ARX","OLS",17,0.692833552255404,0.534018331858343,"us_nominal_disposable_income_growth;us_unemployment_rate;us_cpi_inflation;d_us_bbb_corporate_yield;d_term_spread;d_PPNR",TRUE,2,"K7_H4_R2",1.18404690468498,1.13455561342222,5
+7,7,4,"level","Macro OLS","OLS",17,0.69443883291659,0.541916635717414,"us_nominal_gdp_growth;us_cpi_inflation;us_treasury_10y;log_us_house_price_index;return_us_house_price_index;d_us_bbb_corporate_yield;d_term_spread",FALSE,3,"K7_H4_R3",0.895648311302188,0.603008928534721,5
+8,8,4,"level","ARX","OLS",17,0.677265499021505,0.540224508335726,"us_nominal_gdp_growth;us_cpi_inflation;us_treasury_10y;log_us_house_price_index;return_us_house_price_index;d_us_bbb_corporate_yield;d_term_spread;PPNR",FALSE,1,"K8_H4_R1",0.863043196127338,0.598873845561052,5
+8,7,4,"change","ARX","OLS",17,0.687613263876607,0.547710433785691,"us_nominal_disposable_income_growth;us_unemployment_rate;us_cpi_inflation;us_bbb_corporate_yield;d_us_bbb_corporate_yield;d_term_spread;d_PPNR",TRUE,2,"K8_H4_R2",1.28599101505348,1.23001230779855,5
+8,7,4,"change","ARX","OLS",17,0.68964453588741,0.547107747321873,"us_real_disposable_income_growth;us_unemployment_rate;us_cpi_inflation;us_bbb_corporate_yield;d_us_bbb_corporate_yield;d_term_spread;d_PPNR",TRUE,3,"K8_H4_R3",1.28118509841928,1.22545926658701,5

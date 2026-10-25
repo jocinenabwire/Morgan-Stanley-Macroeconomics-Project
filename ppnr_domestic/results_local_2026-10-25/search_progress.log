@@ -1,0 +1,47 @@
+Fed 2025 Domestic only: 16 source series, 31 derived candidates.
+Selection: 2018-2022 expanding windows. Check: 2023-2024. Final: 2025 Q1-Q4.
+Ranking uses selection RMSE only; the intercept is excluded from factor counts.
+Change equations count the fixed PPNR baseline toward the eight-factor limit.
+Round 1/8 | level | 31 combinations x 4 horizons
+  Complete | 0.1 s
+Round 1/8 | change | 1 combinations x 4 horizons
+  Complete | 0.0 s
+Round 2/8 | level | 465 combinations x 4 horizons
+  Complete | 0.1 s
+Round 2/8 | change | 30 combinations x 4 horizons
+  Complete | 0.1 s
+Round 3/8 | level | 4,495 combinations x 4 horizons
+  Complete | 0.1 s
+Round 3/8 | change | 435 combinations x 4 horizons
+  Complete | 0.1 s
+Round 4/8 | level | 31,465 combinations x 4 horizons
+  Complete | 0.1 s
+Round 4/8 | change | 4,060 combinations x 4 horizons
+  Complete | 0.1 s
+Round 5/8 | level | 169,911 combinations x 4 horizons
+  Complete | 0.2 s
+Round 5/8 | change | 27,405 combinations x 4 horizons
+  Complete | 0.1 s
+Round 6/8 | level | 736,281 combinations x 4 horizons
+  Complete | 0.3 s
+Round 6/8 | change | 142,506 combinations x 4 horizons
+  Complete | 0.1 s
+Round 7/8 | level | 2,629,575 combinations x 4 horizons
+  Complete | 1.4 s
+Round 7/8 | change | 593,775 combinations x 4 horizons
+  Complete | 0.4 s
+Round 8/8 | level | 7,888,725 combinations x 4 horizons
+  Complete | 5.0 s
+Round 8/8 | change | 2,035,800 combinations x 4 horizons
+  Complete | 1.0 s
+Completed all 1-8 factor rounds | 0.2 min | 57,059,840
+ horizon factors model_type selection_RMSE check_RMSE
+       1       8        ARX      0.5177835  0.7644723
+       2       8        ARX      0.5855655  0.8117185
+       3       7        ARX      0.5095212  1.7561722
+       4       8        ARX      0.6772655  0.8630432
+ model_id factors rank horizon  origin quarter actual predicted      error selected_winner
+ K8_H1_R1       8    1       1 2024 Q4 2025 Q1  5.685  5.265581 -0.4194188            TRUE
+ K8_H2_R1       8    1       2 2024 Q4 2025 Q2  4.839  5.901732  1.0627324            TRUE
+ K7_H3_R1       7    1       3 2024 Q4 2025 Q3  6.063  4.790241 -1.2727588            TRUE
+ K8_H4_R1       8    1       4 2024 Q4 2025 Q4  5.788  5.975525  0.1875255            TRUE

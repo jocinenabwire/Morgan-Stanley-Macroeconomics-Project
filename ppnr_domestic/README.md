@@ -28,6 +28,39 @@ Before later work, run `git pull` from the repository terminal. This updates the
 
 ## Optional searches
 
+### Completed four- and nine-quarter searches
+
+The 25 October 2026 searches used the 2009 company history and Domestic inputs
+described above. The four-quarter search retained 96 combinations; the
+nine-quarter search retained 216. Each keeps the three lowest selection-RMSE
+combinations per factor count and horizon, up to eight total factors, with
+past PPNR optional. The fixed PPNR baseline in change equations counts toward
+that limit. Saved rankings and later error checks were independently verified.
+
+To inspect these completed results without rerunning them, source either file
+from the repository root in RStudio:
+
+```r
+source("view_search_four_quarters.R")
+source("view_search_nine_quarters.R")
+```
+
+To deliberately rerun a complete search, use `run_search_four_quarters.R` or
+`run_search_nine_quarters.R`. These require `Rcpp` and a working C++ compiler.
+The shared implementation is in `search_four_quarters.R` and
+`subset_search.cpp`; `search_nine_quarters.R` adds the nine-quarter entry point
+and plots. The existing `run_ppnr.R` still runs ordinary diagnostics and its
+original trial model without starting either search.
+
+Detailed periods, results and limits are recorded with the saved
+[four-quarter results](results_local_2026-10-25/README.md) and
+[nine-quarter results](results_nine_quarters_local_2026-10-25/README.md).
+The nine-quarter check uses six common origins, 2022 Q4–2024 Q1; it differs
+from the earlier check window. Ordering models by those later errors is
+exploratory, not a new untouched test. Temporary checkpoints remain local.
+
+### Earlier three-quarter search functions
+
 With `Rcpp` and a working C++ compiler installed, run either independently:
 
 ```r
@@ -53,4 +86,4 @@ To verify the input integration and ordinary analysis without running either sea
 Rscript --vanilla ppnr_domestic/tests/test_2009_input.R
 ```
 
-Selection uses 2018–2022 errors; the already-inspected 2023–2024 check remains exploratory (8/7/6 observations for horizons 1/2/3). Revised historical data are not a real-time backtest. Forecasts start after 2024 Q4 and are not current forecasts. Large searches have not been rerun for this Domestic-only scope. The previous combined-input workflow remains in `ppnr/` for reproducibility.
+The earlier three-quarter functions use 2018–2022 selection errors and an already-inspected 2023–2024 exploratory check (8/7/6 observations for horizons 1/2/3). Revised historical data are not a real-time backtest. Forecasts from the 2024 Q4 origin are historical estimates. The completed four- and nine-quarter runs are documented above; their later-check windows and available actuals are stated separately. The previous combined-input workflow remains in `ppnr/` for reproducibility.
