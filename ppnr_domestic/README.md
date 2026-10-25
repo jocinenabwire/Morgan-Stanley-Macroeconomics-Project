@@ -1,6 +1,6 @@
 # Morgan Stanley PPNR: Domestic-only workflow
 
-This is the current workflow: **Fed 2025 historical Domestic data only**. It uses 16 US macro series, 196 historical quarters (1976 Q1–2024 Q4), and 60 matched company quarters (2010 Q1–2024 Q4). International data and hypothetical scenarios are not loaded.
+This is the current workflow: **Fed 2025 historical Domestic data only**. It uses 16 US macro series, 196 historical quarters (1976 Q1–2024 Q4), and 64 matched company quarters (2009 Q1–2024 Q4). International data and hypothetical scenarios are not loaded.
 
 ## Start from GitHub
 
@@ -43,6 +43,14 @@ For a short check, add `max_factors = 2, threads = 2, minutes = 2` to either cal
 
 The unmodified [Historic Domestic CSV](https://www.federalreserve.gov/supervisionreg/files/2025-Table_1A_Historic_Domestic.csv) is included in `data/`. The [Fed definitions](https://www.federalreserve.gov/supervisionreg/files/domestic-data-definitions-2025.pdf) explain units and quarterly timing. `domestic_variables.csv` maps the 16 original headings to English R names; `source_manifest.csv` records the source URLs and file hashes.
 
-Company input is the existing `Morgan_Stanley_PPNR_Quarterly_Final.csv` at repository root. Its financial aggregates agree with the earlier model input. The six company quarters after 2024 Q4 retain missing macro values and are excluded, without filling or extrapolating them. PPNR outputs use USD billions per quarter.
+Company input is `Morgan_Stanley_PPNR_Quarterly_2009_2026.csv` at repository root, brought in from `main` commit `829e1c18dac2d60aba27f427e84a0ede2e71c527`. It contains 70 company quarters (2009 Q1–2026 Q2). All values in the overlapping 2010–2026 period agree with the previous company CSV. The six company quarters after 2024 Q4 retain missing macro values and are excluded, without filling or extrapolating them. PPNR outputs use USD billions per quarter.
+
+The additional 2009 quarters extend the training history. Evaluation periods remain fixed by calendar date: selection/development in 2018–2022 and the later historical check in 2023–2024. Seasonal summaries now contain 16 observations for each quarter. The older CSV and the `ppnr/` workflow remain available for reproducibility.
+
+To verify the input integration and ordinary analysis without running either search, run from the repository root:
+
+```sh
+Rscript --vanilla ppnr_domestic/tests/test_2009_input.R
+```
 
 Selection uses 2018–2022 errors; the already-inspected 2023–2024 check remains exploratory (8/7/6 observations for horizons 1/2/3). Revised historical data are not a real-time backtest. Forecasts start after 2024 Q4 and are not current forecasts. Large searches have not been rerun for this Domestic-only scope. The previous combined-input workflow remains in `ppnr/` for reproducibility.

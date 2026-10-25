@@ -1,4 +1,4 @@
-# Morgan Stanley PPNR | 2026-10-22 | Domestic-only workflow
+# Morgan Stanley PPNR | 2026-10-25 | Domestic-only workflow
 # Fed 2025 history: 16 US series; build inputs from the repository CSV files.
 library(urca)
 library(sandwich)
@@ -17,7 +17,7 @@ ppnr_data_dir <- local({
 })
 source(file.path(ppnr_data_dir, "restore_inputs.R"), local = TRUE, chdir = TRUE)
 
-# 1. Keep the 60 matched quarters -----------------------------------------
+# 1. Keep the 64 matched quarters -----------------------------------------
 ms_ppnr_2025 <- ms_macro_2025[ms_macro_2025$macro_matched, ]
 ms_ppnr_2025 <- ms_ppnr_2025[order(ms_ppnr_2025$Date), ]
 ms_ppnr_2025$Date <- as.Date(ms_ppnr_2025$Date)
@@ -28,10 +28,23 @@ quarter_index <- as.integer(format(ppnr_dates, "%Y")) * 4 +
 financial_columns <- c("Total.interest.income", "Total.interest.expense",
                        "Total.noninterest.income", "Total.noninterest.expense")
 macro_columns <- names(fed_macro_2025)[4:ncol(fed_macro_2025)]
-stopifnot(nrow(ms_macro_2025) == 66, nrow(ms_ppnr_2025) == 60,
+stopifnot(nrow(ms_macro_2025) == 70, nrow(ms_ppnr_2025) == 64,
           !anyNA(ppnr_dates), !anyDuplicated(ppnr_dates), all(diff(quarter_index) == 1),
-          identical(range(ppnr_dates), as.Date(c("2010-03-31", "2024-12-31"))),
+          identical(range(ppnr_dates), as.Date(c("2009-03-31", "2024-12-31"))),
           all(is.finite(as.matrix(ms_ppnr_2025[c(financial_columns, macro_columns)]))))
+
+# Fix evaluation periods by calendar date when earlier training history is added.
+ppnr_forecast_origins <- function(data, h, period = c("selection", "check")) {
+  period <- match.arg(period)
+  stopifnot(length(h) == 1L, h %in% 1:3)
+  dates <- as.Date(data$Date)
+  bounds <- if (period == "selection") c("2017-12-31", "2022-12-31") else
+    c("2022-12-31", "2024-12-31")
+  positions <- match(as.Date(bounds), dates)
+  stopifnot(!anyNA(positions), positions[1] >= 2L,
+            positions[1] <= positions[2] - h)
+  seq.int(positions[1], positions[2] - h)
+}
 
 # 2. Calculate PPNR (source values are already quarterly, in USD thousands)
 ms_ppnr_2025$net_interest_income_calc <- with(ms_ppnr_2025,
@@ -190,7 +203,8 @@ contrasts <- sweep(contrasts, 2, colMeans(contrasts), "-")
 covariance <- NeweyWest(ppnr_seasonal_fit, lag = 4, prewhite = FALSE, adjust = TRUE)
 effects <- as.numeric(contrasts %*% coef(ppnr_seasonal_fit))
 margin <- qt(0.975, df.residual(ppnr_seasonal_fit)) * sqrt(diag(contrasts %*% covariance %*% t(contrasts)))
-ppnr_seasonal_pattern_2025 <- data.frame(quarter = levels(ppnr_trend_data$quarter), n = 15,
+ppnr_seasonal_pattern_2025 <- data.frame(quarter = levels(ppnr_trend_data$quarter),
+  n = as.integer(table(ppnr_trend_data$quarter)),
   raw_mean_bn = as.numeric(tapply(ppnr, ppnr_trend_data$quarter, mean)),
   detrended_mean_bn = as.numeric(tapply(residuals(ppnr_trend_fit), ppnr_trend_data$quarter, mean)),
   trend_adjusted_effect_bn = effects, ci95_low = effects - margin, ci95_high = effects + margin)
@@ -241,7 +255,8 @@ plot_ms_ppnr_2025 <- function(which = c("ppnr", "net", "gross")) {
     legend("bottomright", c("Net interest income", "Net noninterest income"), lty = 1:2, bty = "n")
   } else {
     par(mfrow = c(1, 1), mar = c(4, 4.5, 3, 1))
-    plot_series(ppnr, "Morgan Stanley PPNR: 2010 Q1 - 2024 Q4")
+    plot_series(ppnr, sprintf("Morgan Stanley PPNR: %s - %s",
+      ms_ppnr_2025$quarter[1], tail(ms_ppnr_2025$quarter, 1)))
   }
 }
 
@@ -261,7 +276,8 @@ plot_ppnr_diagnostics_2025 <- function(which = c("stationarity", "seasonality"))
   } else {
     par(mfrow = c(1, 2), mar = c(4, 4.5, 4, 1))
     boxplot(residuals(ppnr_trend_fit) ~ ppnr_trend_data$quarter, main = "Detrended PPNR by quarter",
-            xlab = "Quarter (15 observations each)", ylab = "Deviation in USD billion", las = 1)
+            xlab = sprintf("Quarter (%d observations each)", ppnr_seasonal_pattern_2025$n[1]),
+            ylab = "Deviation in USD billion", las = 1)
     abline(h = 0, lty = 3)
     limits <- range(c(0, ppnr_seasonal_pattern_2025$ci95_low, ppnr_seasonal_pattern_2025$ci95_high))
     plot(1:4, effects, xaxt = "n", ylim = limits, pch = 16, main = "Quarterly effects: 95% HAC intervals",
@@ -300,8 +316,10 @@ ppnr_trial_2025 <- local({
 
   # Expanding windows: develop through 2022, then check 2023-2024 separately.
   # Revised 2025 history: this is not a real-time vintage backtest.
+  first_origin <- ppnr_forecast_origins(ms_ppnr_2025, 1, "selection")[1]
+  check_origin <- ppnr_forecast_origins(ms_ppnr_2025, 1, "check")[1]
   rows <- list()
-  for (origin in 32:(nrow(ms_ppnr_2025) - 1)) {
+  for (origin in seq.int(first_origin, nrow(ms_ppnr_2025) - 1L)) {
     history <- ms_ppnr_2025[seq_len(origin), ]
     prediction <- as.numeric(forecast(fit_model(history), history))
     values <- history$PPNR / 1e6
@@ -312,9 +330,9 @@ ppnr_trial_2025 <- local({
     for (h in seq_len(min(3, nrow(ms_ppnr_2025) - origin))) {
       step <- sum(coef(benchmark) * c(1, step))
       baseline <- baseline + step
-      if (origin < 52 && origin + h > 52) next
+      if (origin < check_origin && origin + h > check_origin) next
       rows[[length(rows) + 1]] <- data.frame(
-        period = if (origin < 52) "Development: 2018-2022" else "Check: 2023-2024",
+        period = if (origin < check_origin) "Development: 2018-2022" else "Check: 2023-2024",
         origin = history$quarter[origin], target = ms_ppnr_2025$quarter[origin + h], horizon = h,
         actual = ms_ppnr_2025$PPNR[origin + h] / 1e6,
         Trial = prediction, Naive = tail(values, 1), Difference_AR1 = baseline)
@@ -348,7 +366,7 @@ ppnr_trial_2025 <- local({
 # Source checks: FFIEC FR Y-9C, Morgan Stanley RSSD 2162966, 2024-09-30 and 2024-12-31.
 
 # 7. Exhaustive forecast search: one to eight factors ---------------------
-# Keep Fed 2025 and the 60 matched quarters; source columns stay unchanged.
+# Keep Fed 2025 and the 64 matched quarters; source columns stay unchanged.
 # US price indices: log levels and 100*log changes. Yields: levels and percentage-point changes.
 # US growth, inflation, unemployment and VIX stay in their published rate/level form.
 # Search all OLS subsets of 1:8 local candidates, including two spreads and own PPNR.
@@ -580,8 +598,9 @@ List ppnr_search_round(List inputs, int size, int threads = 6,
 }
 )---", env = environment(), showOutput = FALSE)
   # Local candidates: keep rates/growth/VIX; add changes only where meaningful.
-  stopifnot(nrow(data) == 60, identical(range(as.Date(data$Date)),
-    as.Date(c("2010-03-31", "2024-12-31"))))
+  sample_n <- nrow(data)
+  stopifnot(sample_n == 64, identical(range(as.Date(data$Date)),
+    as.Date(c("2009-03-31", "2024-12-31"))))
   macro <- c("us_real_gdp_growth", "us_nominal_gdp_growth",
     "us_real_disposable_income_growth", "us_nominal_disposable_income_growth",
     "us_unemployment_rate", "us_cpi_inflation", "us_treasury_3m",
@@ -607,11 +626,11 @@ List ppnr_search_round(List inputs, int size, int threads = 6,
   x <- as.matrix(x)
   search_columns <- if (required_ppnr) which(colnames(x) != "PPNR") else seq_len(ncol(x))
   stopifnot(length(search_columns) == if (required_ppnr) 29L else 31L,
-    all(is.finite(x[2:60, ])), max_factors %in% 1:8)
+    all(is.finite(x[2:sample_n, ])), max_factors %in% 1:8)
   tasks <- expand.grid(horizon = 1:3, target = c("level", "change"),
                        stringsAsFactors = FALSE)
   folds <- function(h, target, period = "selection") {
-    origins <- if (period == "selection") 32:(52 - h) else 52:(60 - h)
+    origins <- ppnr_forecast_origins(data, h, period)
     lapply(origins, function(o) {
       i <- 2:(o - h)
       response <- y[i + h] - if (target == "change") y[i] else 0
@@ -724,7 +743,7 @@ List ppnr_search_round(List inputs, int size, int threads = 6,
     winner <- winners[winners$horizon == h, ]
     v <- match(strsplit(winner$variables, ";", fixed = TRUE)[[1]], colnames(x))
     for (period in c("selection", "check")) {
-      origins <- if (period == "selection") 32:(52 - h) else 52:(60 - h)
+      origins <- ppnr_forecast_origins(data, h, period)
       for (o in origins) {
         i <- 2:(o - 1)
         trial <- lm.fit(cbind(1, x[i, core, drop = FALSE]), y[i + 1])
@@ -735,13 +754,13 @@ List ppnr_search_round(List inputs, int size, int threads = 6,
           Naive = y[o])
       }
     }
-    i <- 2:(60 - h)
+    i <- 2:(sample_n - h)
     response <- y[i + h] - if (winner$target == "change") y[i] else 0
     model_data <- data.frame(PPNR_target = response, x[i, v, drop = FALSE])
     models[[paste0("H", h)]] <- lm(reformulate(colnames(x)[v], response = "PPNR_target",
       env = baseenv()), data = model_data)
     forecasts[[h]] <- data.frame(horizon = h,
-      PPNR_bn = forecast_subset(v, 60, h, winner$target))
+      PPNR_bn = forecast_subset(v, sample_n, h, winner$target))
   }
   predictions <- do.call(rbind, predictions)
   scores <- do.call(rbind, lapply(split(predictions,
@@ -793,7 +812,7 @@ check_ppnr_candidates <- function(result, data) {
     h <- bbs$horizon[r]; target <- bbs$target[r]
     v <- match(strsplit(bbs$variables[r], ";", fixed = TRUE)[[1]], colnames(x))
     for (period in c("selection", "check")) {
-      origins <- if (period == "selection") 32:(52 - h) else 52:(60 - h)
+      origins <- ppnr_forecast_origins(data, h, period)
       predicted <- vapply(origins, function(o) {
         i <- 2:(o - h)
         response <- y[i + h] - if (target == "change") y[i] else 0

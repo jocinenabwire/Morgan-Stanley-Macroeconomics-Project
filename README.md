@@ -71,6 +71,6 @@ If feasible, the analysis will be extended to other large U.S. bank holding comp
 
 The working code is on branch `ppnr-portable-analysis-2026-10-22`. After cloning/checking out that branch, open `Morgan_Stanley_Macroeconomics.Rproj` in RStudio and Source `run_ppnr.R`.
 
-The active input is the **2025 Fed Historic Domestic** dataset (16 US macro variables). The original Domestic CSV is included. The analysis reads files from the local Git clone; update with `git pull`. Large searches are opt-in. See [the setup and source notes](ppnr_domestic/README.md).
+The active macro input is the **2025 Fed Historic Domestic** dataset (16 US macro variables). The company input is `Morgan_Stanley_PPNR_Quarterly_2009_2026.csv`, brought in from `main`: 70 company quarters and 64 matched quarters from 2009 Q1 through 2024 Q4. The original Domestic CSV is included. The analysis reads files from the local Git clone; update with `git pull`. Large searches are opt-in. See [the setup and source notes](ppnr_domestic/README.md).
 
 The earlier combined Domestic/International workflow in `ppnr/` is retained for reproducibility and is not the active Domestic-only workflow.
