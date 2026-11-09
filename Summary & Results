@@ -1,1 +1,260 @@
+# Morgan Stanley PPNR Project – Summary of Preliminary Analysis
 
+## 1. Data preparation and integration
+
+I combined three datasets:
+
+1. **Morgan Stanley PPNR data** – quarterly income and expense components.
+2. **FR Y-9C balance sheet data** – Morgan Stanley's balance sheet information.
+3. **Federal Reserve macroeconomic data** – US macroeconomic and financial market indicators.
+
+The datasets were cleaned, aligned and merged into one quarterly master dataset covering **64 observations from 2009 Q1 to 2024 Q4**.
+
+Other preparation steps included:
+- Checking for missing observations and duplicate quarters.
+- Checking the consistency of the main PPNR figures.
+- Converting the relevant financial variables into USD billions.
+- Creating the four PPNR components and calculating aggregate PPNR.
+
+The six balance-sheet variables included in the master dataset are:
+- Total assets
+- Total liabilities
+- Equity capital
+- Loans and leases
+- Gross loans
+- Net loans
+
+## 2. Descriptive analysis
+
+Calculated descriptive statistics and produced time-series visualisations for the four PPNR components and total assets.
+
+Main observations:
+- Interest income and interest expense increased substantially from around 2022.
+- Noninterest income and noninterest expense generally increased over the sample, with some fluctuations.
+- Total assets expanded considerably, particularly between 2020 and 2022.
+
+These patterns suggest that the different PPNR components may respond differently to changes in the economic and financial environment.
+
+## 3. Selection of explanatory variables
+
+The explanatory variables were selected based on economic reasoning, data availability and preliminary correlation analysis.
+
+The economic considerations were:
+
+- **Interest income:** Interest rates, lending activity and the size of the bank's assets.
+- **Interest expense:** Funding costs, liabilities and interest rates.
+- **Noninterest income:** Bank size, economic activity, stock-market performance and market volatility.
+- **Noninterest expense:** Operational scale, inflation and labour-market conditions.
+
+We also examined correlations between the dependent variables and potential explanatory variables, as well as correlations among the explanatory variables to identify possible multicollinearity.
+
+Some notable correlations included:
+- Interest income and 3-month Treasury rate: 0.973.
+- Interest expense and 3-month Treasury rate: 0.956.
+- Noninterest income and total assets: 0.898.
+- Noninterest income and Dow Jones index: 0.862.
+- Noninterest expense and total assets: 0.920.
+
+Some explanatory variables were also highly correlated with one another. For example, total assets and total liabilities had a correlation of 0.999, while the 3-month Treasury rate and prime rate had a correlation of 0.997. Therefore, we avoided including every potential variable in the same preliminary regression.
+
+These correlations are exploratory and do not establish causality or statistical significance.
+
+## 4. Stationarity analysis
+
+ADF and KPSS tests were conducted on the four PPNR components and potential explanatory variables.
+
+Main findings:
+- All four PPNR components showed evidence of nonstationarity in levels.
+- Noninterest income and noninterest expense showed consistent evidence of stationarity after first differencing.
+- Interest income and interest expense produced mixed ADF and KPSS results, including after first differencing.
+- Total assets also produced mixed evidence after first differencing.
+
+This creates uncertainty about the appropriate modelling strategy, particularly whether to estimate a VAR in differences or investigate cointegration and a possible VECM.
+
+## 5. Structural break analysis
+
+A preliminary structural break analysis was conducted using the Bai–Perron breakpoint approach through the `strucchange` package in R, with BIC used to select the preferred number of breaks.
+
+Results:
+
+| PPNR component | Preferred number of breaks | Estimated observations |
+|---|---:|---|
+| Interest income | 2 | 33 and 55 |
+| Interest expense | 3 | 36, 45 and 55 |
+| Noninterest income | 1 | One break |
+| Noninterest expense | 2 | 19 and 47 |
+
+The preference for one break in noninterest income was weak.
+
+These are preliminary estimated breakpoints. Their statistical significance and causes have not yet been established. However, they suggest that the PPNR components may have experienced changes in their underlying patterns over the sample.
+
+## 6. Preliminary regression models
+
+Four separate OLS regression models were estimated, one for each PPNR component. The dependent variables and relevant nonstationary explanatory variables were generally expressed in first differences, while selected growth-rate variables were retained in levels.
+
+**Model 1: Interest income**
+
+Dependent variable: Change in total interest income.
+
+Explanatory variables:
+- Change in total assets.
+- Change in 3-month Treasury rate.
+- Change in 10-year Treasury yield.
+- Real GDP growth.
+
+R² = **67.8%**
+
+Main finding: The 3-month Treasury rate was strongly positive and statistically significant. Total assets and the 10-year Treasury yield were insignificant. Real GDP growth was insignificant under conventional standard errors but significant under Newey-West standard errors.
+
+**Model 2: Interest expense**
+
+Dependent variable: Change in total interest expense.
+
+Explanatory variables:
+- Change in total liabilities.
+- Change in 3-month Treasury rate.
+- Change in 10-year Treasury yield.
+
+R² = **73.3%**
+
+Main finding: The 3-month Treasury rate was strongly positive and statistically significant. Total liabilities and the 10-year Treasury yield were insignificant.
+
+**Model 3: Noninterest income**
+
+Dependent variable: Change in total noninterest income.
+
+Explanatory variables:
+- Change in total assets.
+- Change in Dow Jones index.
+- Change in VIX.
+- Real GDP growth.
+
+R² = **39.2%**
+
+Main finding: Total assets had a positive and statistically significant coefficient, while real GDP growth had a negative and statistically significant coefficient. The Dow Jones index was insignificant, while VIX was only marginally significant under Newey-West standard errors.
+
+The negative GDP-growth relationship is unexpected and needs further investigation.
+
+**Model 4: Noninterest expense**
+
+Dependent variable: Change in total noninterest expense.
+
+Explanatory variables:
+- Change in total assets.
+- Change in CPI inflation.
+- Change in unemployment.
+- Nominal GDP growth.
+
+R² = **10.8%**
+
+Main finding: The model had weak explanatory power and was not statistically significant overall under the conventional F-test. Total assets were marginally significant under conventional standard errors and significant under Newey-West standard errors. The other explanatory variables were insignificant.
+
+### Regression model comparison
+
+| Model | R² | Adjusted R² |
+|---|---:|---:|
+| Interest income | 67.8% | 65.5% |
+| Interest expense | 73.3% | 72.0% |
+| Noninterest income | 39.2% | 35.0% |
+| Noninterest expense | 10.8% | 4.6% |
+
+The interest income and interest expense models had the strongest preliminary explanatory power. The noninterest models require further investigation.
+
+## 7. Regression diagnostic tests
+
+Three main diagnostic tests were conducted:
+
+- **Breusch–Godfrey test:** Checks for serial correlation in residuals.
+- **Breusch–Pagan test:** Checks for heteroskedasticity.
+- **VIF:** Checks for multicollinearity among explanatory variables.
+
+Results:
+
+| Model | BG test p-value | BP test p-value | VIF range |
+|---|---:|---:|---:|
+| Interest income | 0.3388 | 0.3250 | 1.05–1.28 |
+| Interest expense | 0.0885 | 0.0134 | 1.04–1.23 |
+| Noninterest income | 0.0000965 | 0.9834 | 1.03–1.63 |
+| Noninterest expense | 0.0002013 | 0.5634 | 1.06–4.60 |
+
+Interpretation:
+
+**Interest income**
+- No evidence of serial correlation.
+- No evidence of heteroskedasticity.
+- No concerning multicollinearity.
+- This model performed relatively well diagnostically.
+
+**Interest expense**
+- No rejection of the null of no serial correlation at the 5% level, although the result is relatively close to the threshold.
+- Evidence of heteroskedasticity.
+- No concerning multicollinearity.
+- Newey-West standard errors were calculated for more robust statistical inference.
+
+**Noninterest income**
+- Strong evidence of serial correlation.
+- No evidence of heteroskedasticity.
+- No concerning multicollinearity.
+- The model may not fully capture the dynamics of noninterest income.
+
+**Noninterest expense**
+- Strong evidence of serial correlation.
+- No evidence of heteroskedasticity.
+- VIF values were below 5, although some predictors had relatively elevated values.
+- The model requires further specification work.
+
+Newey-West standard errors were also calculated using four lags. These adjust inference for heteroskedasticity and autocorrelation, but they do not eliminate serial correlation or correct a misspecified model.
+
+## 8. Additional analysis: Total assets and noninterest income
+
+I estimated an additional levels regression:
+
+Noninterest income = β₀ + β₁(Total assets) + error
+
+Results:
+- R² = **80.6%**.
+- Total assets had a positive and statistically significant coefficient.
+- The estimated coefficient was 0.01148.
+
+This suggests that a USD 1 billion increase in total assets was associated with approximately USD 11.48 million higher noninterest income in the sample.
+
+However, both variables may be nonstationary. We have not yet established cointegration, so the relationship could be spurious and requires further testing.
+
+## 9. Balance-sheet variables: What has been used?
+
+Although six balance-sheet variables were included in the master dataset, we have not yet used all of them in the regression models.
+
+- Total assets: Used in the interest income, noninterest income and noninterest expense regressions.
+- Total liabilities: Used in the interest expense regression.
+- Loans and leases: Examined through correlations with interest income.
+- Equity capital, gross loans and net loans: Included in the dataset but not yet tested in the reported regression models.
+
+We therefore still need to investigate which additional balance-sheet measures are economically relevant for each PPNR component.
+
+## 10. Main challenges identified
+
+1. Mixed stationarity results for interest income and interest expense.
+2. Uncertainty about whether a VAR in differences or VECM is more appropriate.
+3. Potential structural breaks that may affect model stability.
+4. Heteroskedasticity in the interest expense model.
+5. Serial correlation in both noninterest component models.
+6. Weak explanatory power of the noninterest expense model.
+7. Unexpected negative GDP-growth relationship in the noninterest income model.
+8. Some balance-sheet variables have not yet been explored in the regressions.
+9. The long-run relationship between total assets and noninterest income has not yet been formally tested for cointegration.
+
+## 11. Questions and guidance needed before proceeding
+
+
+1. Given the mixed stationarity results, how should we determine the appropriate VAR specification?
+2. Should we conduct formal cointegration tests and consider a VECM?
+3. Should we account for structural breaks using dummy variables or another approach?
+4. Should we estimate separate VAR systems for each PPNR component or one combined system?
+5. Which additional balance-sheet variables should we incorporate, particularly equity capital, gross loans and net loans?
+6. Are there other macroeconomic or firm-specific variables we should investigate, especially for noninterest income and noninterest expense?
+7. How should we address the serial correlation in the noninterest models?
+8. Should we refine the individual regression models further before moving to VAR estimation?
+
+**Overall progress:** The three datasets have been integrated, the preliminary empirical analysis has been completed, and four component-level regression models have been estimated and diagnosed. The next stage is to refine the model specification, investigate the outstanding stationarity and structural break issues, and proceed with the appropriate VAR/VECM framework.
+
+The R script and combined master dataset are available in the repository for everyone to review. Please have a look so we can discuss the findings, identify any gaps and agree on the next steps.
