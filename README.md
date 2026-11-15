@@ -53,6 +53,12 @@ Depending on the time-series properties and results of the baseline analysis, mu
 8.	Potential cross-bank extension.
 If feasible, the analysis will be extended to other large U.S. bank holding companies using panel-data methods. This would allow comparison of macroeconomic sensitivities across institutions and business models.
 
+### Morgan Stanley Y-9C data status
+
+The selected Morgan Stanley Y-9C source data cover 2009Q1–2026Q3 (71 quarters), identified by RSSD ID 2162966. The source snapshot records the 60 selected Y-9C codes and a source URL for each quarter. Use `build_y9c_source_snapshot.R` to recreate that snapshot from FFIEC source archives and `rebuild_y9c_outputs.R` to regenerate the maintained PPNR and balance-sheet CSVs. Detailed provenance, units, source-form gaps, and validation results are in [Y9C_Update_Guide.md](Y9C_Update_Guide.md).
+
+The approved target-only split is in `data_splits/`: 62 training quarters through 2024Q2 and the latest nine Y-9C outcome quarters from 2024Q3–2026Q3. Macro and balance-sheet predictors are not included yet; see [SPLIT_SPEC.md](data_splits/SPLIT_SPEC.md) before using these files for model evaluation.
+
 ### Timeline
 •	Week 4: Data analysis: Finalize the construction and scaling of the selected Morgan Stanley PPNR components and macroeconomic variables. Conduct descriptive analysis, correlations and preliminary time-series diagnostics.
 
