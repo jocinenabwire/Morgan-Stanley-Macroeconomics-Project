@@ -1,0 +1,2 @@
+Training_Start,Training_End,Training_Observations,Horizon_Quarters,Window_Grid,Lag_Grid,Minimum_Residual_DF,Candidate_Specifications,Estimable_Model_Window_Pairs,Excluded_Model_Window_Pairs,Differenced_Target_Feasible_Model_Window_Pairs,Top50_Unfiltered_Negative_Component_Model_Window_Pairs,Common_Origins,Common_Origin_Start,Common_Origin_End,Common_Backtest_Forecasts_Per_Target,Workers,Test_Set_Loaded,Fed_Stress_Scenario_Used
+2009 Q1,2024 Q2,62,9,"12, 16, 20, 24, 28, 32","1, 2, 3, 4",8,180,780,300,172,14,21,2017 Q1,2022 Q1,189,4,FALSE,FALSE

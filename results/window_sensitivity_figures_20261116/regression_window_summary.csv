@@ -1,0 +1,9 @@
+Outcome,Window,Eligible_Models,Common_Origins,Top10_Mean_MAPE_pct,Top10_Median_MAPE_pct,Best_MAPE_pct,Tenth_Best_MAPE_pct,Best_Model
+Interest income (II),20,14939,20,12.262086829660927,12.262572281776304,11.967003997192466,12.567589711020974,II_lag + Rate_3M + Loans + Reverse_Repos + Balances_Growth
+Interest income (II),24,14939,20,12.655057568821238,12.677400353406275,12.358654981994388,12.869716679081732,Rate_3M + Loans + Reverse_Repos + Trading_Growth + Balances_Growth + Rate_Repos_Change
+Interest income (II),28,14939,20,12.19069058161447,12.279664301586363,11.504647676933253,12.436168635618223,Rate_3M + Loans + Rate_Loans + Trading_Growth + Balances_Growth + Rate_Repos_Change
+Interest income (II),32,14939,20,12.14055369121162,12.217232550117316,11.05697780314133,12.487855596764026,Rate_3M + Loans + Rate_Loans + Trading_Growth + Balances_Growth + Rate_Repos_Change
+Interest expense (IE),20,73772,21,21.876896649863845,22.059846035429,20.82966037797247,22.63236130502623,IE_lag + Deposits_Foreign + Rate_10Y + Rate_Change + Rate_Repos
+Interest expense (IE),24,73772,21,23.35063733957406,23.577214831538917,22.03923144130682,24.11164831903671,Repos + Other_Borrowing + Trading_Liabilities + Rate_10Y + Rate_Borrowing + Rate_Repos_Change
+Interest expense (IE),28,73772,21,21.559492637943098,21.65222280331266,20.54557684342663,22.04185540707704,Repos + Subordinated_Debt + Rate_10Y + BBB_Yield + Rate_Borrowing + Rate_Repos_Change
+Interest expense (IE),32,73772,21,20.027663776995833,20.296619585120425,18.1850157303294,20.68051213041044,IE_lag + Repos + Subordinated_Debt + Trading_Liabilities + BBB_Yield + Rate_Borrowing

@@ -1,0 +1,4 @@
+Method,Windows_Available,Common_Origins,Forecast_Horizon_Quarters,Holdout_Used
+Regression,"20, 24, 28, 32",II: 20; IE: 21,9,FALSE
+Stationary VAR,"24, 28, 32",20,9,FALSE
+Stationary VAR PPNR composite,"24, 28, 32",20,9,FALSE

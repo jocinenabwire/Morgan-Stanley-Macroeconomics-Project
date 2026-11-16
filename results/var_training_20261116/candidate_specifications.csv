@@ -1,0 +1,181 @@
+Model_ID,Family,Target_Transform,II_Transform,IE_Transform,Macro_System,Macro_Variables,Endogenous_Variables,Number_Endogenous,P
+LEVEL_LEVEL__Base__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Base,None,II + IE,2,1
+LEVEL_LEVEL__Base__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Base,None,II + IE,2,2
+LEVEL_LEVEL__Base__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Base,None,II + IE,2,3
+LEVEL_LEVEL__Base__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Base,None,II + IE,2,4
+LEVEL_LEVEL__Rate_3M_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_level,Rate_3M,II + IE + Rate_3M,3,1
+LEVEL_LEVEL__Rate_3M_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_level,Rate_3M,II + IE + Rate_3M,3,2
+LEVEL_LEVEL__Rate_3M_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_level,Rate_3M,II + IE + Rate_3M,3,3
+LEVEL_LEVEL__Rate_3M_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_level,Rate_3M,II + IE + Rate_3M,3,4
+LEVEL_LEVEL__Rate_10Y_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_10Y_level,Rate_10Y,II + IE + Rate_10Y,3,1
+LEVEL_LEVEL__Rate_10Y_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_10Y_level,Rate_10Y,II + IE + Rate_10Y,3,2
+LEVEL_LEVEL__Rate_10Y_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_10Y_level,Rate_10Y,II + IE + Rate_10Y,3,3
+LEVEL_LEVEL__Rate_10Y_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_10Y_level,Rate_10Y,II + IE + Rate_10Y,3,4
+LEVEL_LEVEL__BBB_Yield_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Yield_level,BBB_Yield,II + IE + BBB_Yield,3,1
+LEVEL_LEVEL__BBB_Yield_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Yield_level,BBB_Yield,II + IE + BBB_Yield,3,2
+LEVEL_LEVEL__BBB_Yield_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Yield_level,BBB_Yield,II + IE + BBB_Yield,3,3
+LEVEL_LEVEL__BBB_Yield_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Yield_level,BBB_Yield,II + IE + BBB_Yield,3,4
+LEVEL_LEVEL__Term_Spread_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Term_Spread_level,Term_Spread,II + IE + Term_Spread,3,1
+LEVEL_LEVEL__Term_Spread_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Term_Spread_level,Term_Spread,II + IE + Term_Spread,3,2
+LEVEL_LEVEL__Term_Spread_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Term_Spread_level,Term_Spread,II + IE + Term_Spread,3,3
+LEVEL_LEVEL__Term_Spread_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Term_Spread_level,Term_Spread,II + IE + Term_Spread,3,4
+LEVEL_LEVEL__BBB_Spread_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Spread_level,BBB_Spread,II + IE + BBB_Spread,3,1
+LEVEL_LEVEL__BBB_Spread_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Spread_level,BBB_Spread,II + IE + BBB_Spread,3,2
+LEVEL_LEVEL__BBB_Spread_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Spread_level,BBB_Spread,II + IE + BBB_Spread,3,3
+LEVEL_LEVEL__BBB_Spread_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,BBB_Spread_level,BBB_Spread,II + IE + BBB_Spread,3,4
+LEVEL_LEVEL__VIX_level__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,VIX_level,VIX,II + IE + VIX,3,1
+LEVEL_LEVEL__VIX_level__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,VIX_level,VIX,II + IE + VIX,3,2
+LEVEL_LEVEL__VIX_level__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,VIX_level,VIX,II + IE + VIX,3,3
+LEVEL_LEVEL__VIX_level__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,VIX_level,VIX,II + IE + VIX,3,4
+LEVEL_LEVEL__Rate_3M_plus_Rate_10Y__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Rate_10Y,Rate_3M + Rate_10Y,II + IE + Rate_3M + Rate_10Y,4,1
+LEVEL_LEVEL__Rate_3M_plus_Rate_10Y__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Rate_10Y,Rate_3M + Rate_10Y,II + IE + Rate_3M + Rate_10Y,4,2
+LEVEL_LEVEL__Rate_3M_plus_Rate_10Y__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Rate_10Y,Rate_3M + Rate_10Y,II + IE + Rate_3M + Rate_10Y,4,3
+LEVEL_LEVEL__Rate_3M_plus_Rate_10Y__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Rate_10Y,Rate_3M + Rate_10Y,II + IE + Rate_3M + Rate_10Y,4,4
+LEVEL_LEVEL__Rate_3M_plus_Term_Spread__VAR1,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Term_Spread,Rate_3M + Term_Spread,II + IE + Rate_3M + Term_Spread,4,1
+LEVEL_LEVEL__Rate_3M_plus_Term_Spread__VAR2,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Term_Spread,Rate_3M + Term_Spread,II + IE + Rate_3M + Term_Spread,4,2
+LEVEL_LEVEL__Rate_3M_plus_Term_Spread__VAR3,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Term_Spread,Rate_3M + Term_Spread,II + IE + Rate_3M + Term_Spread,4,3
+LEVEL_LEVEL__Rate_3M_plus_Term_Spread__VAR4,Level_VAR,LEVEL_LEVEL,Level,Level,Rate_3M_plus_Term_Spread,Rate_3M + Term_Spread,II + IE + Rate_3M + Term_Spread,4,4
+D_D__Base__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Base,None,d_II + d_IE,2,1
+D_D__Base__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Base,None,d_II + d_IE,2,2
+D_D__Base__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Base,None,d_II + d_IE,2,3
+D_D__Base__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Base,None,d_II + d_IE,2,4
+D_D__Rate_3M_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change,d_Rate_3M,d_II + d_IE + d_Rate_3M,3,1
+D_D__Rate_3M_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change,d_Rate_3M,d_II + d_IE + d_Rate_3M,3,2
+D_D__Rate_3M_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change,d_Rate_3M,d_II + d_IE + d_Rate_3M,3,3
+D_D__Rate_3M_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change,d_Rate_3M,d_II + d_IE + d_Rate_3M,3,4
+D_D__Rate_10Y_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Rate_10Y_change,d_Rate_10Y,d_II + d_IE + d_Rate_10Y,3,1
+D_D__Rate_10Y_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Rate_10Y_change,d_Rate_10Y,d_II + d_IE + d_Rate_10Y,3,2
+D_D__Rate_10Y_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Rate_10Y_change,d_Rate_10Y,d_II + d_IE + d_Rate_10Y,3,3
+D_D__Rate_10Y_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Rate_10Y_change,d_Rate_10Y,d_II + d_IE + d_Rate_10Y,3,4
+D_D__BBB_Yield_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Yield_change,d_BBB_Yield,d_II + d_IE + d_BBB_Yield,3,1
+D_D__BBB_Yield_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Yield_change,d_BBB_Yield,d_II + d_IE + d_BBB_Yield,3,2
+D_D__BBB_Yield_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Yield_change,d_BBB_Yield,d_II + d_IE + d_BBB_Yield,3,3
+D_D__BBB_Yield_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Yield_change,d_BBB_Yield,d_II + d_IE + d_BBB_Yield,3,4
+D_D__Term_Spread_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Term_Spread_change,d_Term_Spread,d_II + d_IE + d_Term_Spread,3,1
+D_D__Term_Spread_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Term_Spread_change,d_Term_Spread,d_II + d_IE + d_Term_Spread,3,2
+D_D__Term_Spread_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Term_Spread_change,d_Term_Spread,d_II + d_IE + d_Term_Spread,3,3
+D_D__Term_Spread_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Term_Spread_change,d_Term_Spread,d_II + d_IE + d_Term_Spread,3,4
+D_D__BBB_Spread_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Spread_change,d_BBB_Spread,d_II + d_IE + d_BBB_Spread,3,1
+D_D__BBB_Spread_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Spread_change,d_BBB_Spread,d_II + d_IE + d_BBB_Spread,3,2
+D_D__BBB_Spread_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Spread_change,d_BBB_Spread,d_II + d_IE + d_BBB_Spread,3,3
+D_D__BBB_Spread_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,BBB_Spread_change,d_BBB_Spread,d_II + d_IE + d_BBB_Spread,3,4
+D_D__VIX_level__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,VIX_level,VIX,d_II + d_IE + VIX,3,1
+D_D__VIX_level__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,VIX_level,VIX,d_II + d_IE + VIX,3,2
+D_D__VIX_level__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,VIX_level,VIX,d_II + d_IE + VIX,3,3
+D_D__VIX_level__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,VIX_level,VIX,d_II + d_IE + VIX,3,4
+D_D__Rate_3M_and_10Y_changes__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + d_IE + d_Rate_3M + d_Rate_10Y,4,1
+D_D__Rate_3M_and_10Y_changes__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + d_IE + d_Rate_3M + d_Rate_10Y,4,2
+D_D__Rate_3M_and_10Y_changes__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + d_IE + d_Rate_3M + d_Rate_10Y,4,3
+D_D__Rate_3M_and_10Y_changes__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + d_IE + d_Rate_3M + d_Rate_10Y,4,4
+D_D__Rate_3M_change_and_Term_Spread_change__VAR1,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + d_IE + d_Rate_3M + d_Term_Spread,4,1
+D_D__Rate_3M_change_and_Term_Spread_change__VAR2,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + d_IE + d_Rate_3M + d_Term_Spread,4,2
+D_D__Rate_3M_change_and_Term_Spread_change__VAR3,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + d_IE + d_Rate_3M + d_Term_Spread,4,3
+D_D__Rate_3M_change_and_Term_Spread_change__VAR4,Differenced_Target_VAR,D_D,Difference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + d_IE + d_Rate_3M + d_Term_Spread,4,4
+D_G__Base__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Base,None,d_II + g_IE,2,1
+D_G__Base__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Base,None,d_II + g_IE,2,2
+D_G__Base__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Base,None,d_II + g_IE,2,3
+D_G__Base__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Base,None,d_II + g_IE,2,4
+D_G__Rate_3M_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change,d_Rate_3M,d_II + g_IE + d_Rate_3M,3,1
+D_G__Rate_3M_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change,d_Rate_3M,d_II + g_IE + d_Rate_3M,3,2
+D_G__Rate_3M_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change,d_Rate_3M,d_II + g_IE + d_Rate_3M,3,3
+D_G__Rate_3M_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change,d_Rate_3M,d_II + g_IE + d_Rate_3M,3,4
+D_G__Rate_10Y_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_10Y_change,d_Rate_10Y,d_II + g_IE + d_Rate_10Y,3,1
+D_G__Rate_10Y_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_10Y_change,d_Rate_10Y,d_II + g_IE + d_Rate_10Y,3,2
+D_G__Rate_10Y_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_10Y_change,d_Rate_10Y,d_II + g_IE + d_Rate_10Y,3,3
+D_G__Rate_10Y_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_10Y_change,d_Rate_10Y,d_II + g_IE + d_Rate_10Y,3,4
+D_G__BBB_Yield_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Yield_change,d_BBB_Yield,d_II + g_IE + d_BBB_Yield,3,1
+D_G__BBB_Yield_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Yield_change,d_BBB_Yield,d_II + g_IE + d_BBB_Yield,3,2
+D_G__BBB_Yield_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Yield_change,d_BBB_Yield,d_II + g_IE + d_BBB_Yield,3,3
+D_G__BBB_Yield_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Yield_change,d_BBB_Yield,d_II + g_IE + d_BBB_Yield,3,4
+D_G__Term_Spread_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Term_Spread_change,d_Term_Spread,d_II + g_IE + d_Term_Spread,3,1
+D_G__Term_Spread_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Term_Spread_change,d_Term_Spread,d_II + g_IE + d_Term_Spread,3,2
+D_G__Term_Spread_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Term_Spread_change,d_Term_Spread,d_II + g_IE + d_Term_Spread,3,3
+D_G__Term_Spread_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Term_Spread_change,d_Term_Spread,d_II + g_IE + d_Term_Spread,3,4
+D_G__BBB_Spread_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Spread_change,d_BBB_Spread,d_II + g_IE + d_BBB_Spread,3,1
+D_G__BBB_Spread_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Spread_change,d_BBB_Spread,d_II + g_IE + d_BBB_Spread,3,2
+D_G__BBB_Spread_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Spread_change,d_BBB_Spread,d_II + g_IE + d_BBB_Spread,3,3
+D_G__BBB_Spread_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,BBB_Spread_change,d_BBB_Spread,d_II + g_IE + d_BBB_Spread,3,4
+D_G__VIX_level__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,VIX_level,VIX,d_II + g_IE + VIX,3,1
+D_G__VIX_level__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,VIX_level,VIX,d_II + g_IE + VIX,3,2
+D_G__VIX_level__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,VIX_level,VIX,d_II + g_IE + VIX,3,3
+D_G__VIX_level__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,VIX_level,VIX,d_II + g_IE + VIX,3,4
+D_G__Rate_3M_and_10Y_changes__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + g_IE + d_Rate_3M + d_Rate_10Y,4,1
+D_G__Rate_3M_and_10Y_changes__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + g_IE + d_Rate_3M + d_Rate_10Y,4,2
+D_G__Rate_3M_and_10Y_changes__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + g_IE + d_Rate_3M + d_Rate_10Y,4,3
+D_G__Rate_3M_and_10Y_changes__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,d_II + g_IE + d_Rate_3M + d_Rate_10Y,4,4
+D_G__Rate_3M_change_and_Term_Spread_change__VAR1,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + g_IE + d_Rate_3M + d_Term_Spread,4,1
+D_G__Rate_3M_change_and_Term_Spread_change__VAR2,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + g_IE + d_Rate_3M + d_Term_Spread,4,2
+D_G__Rate_3M_change_and_Term_Spread_change__VAR3,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + g_IE + d_Rate_3M + d_Term_Spread,4,3
+D_G__Rate_3M_change_and_Term_Spread_change__VAR4,Differenced_Target_VAR,D_G,Difference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,d_II + g_IE + d_Rate_3M + d_Term_Spread,4,4
+G_D__Base__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Base,None,g_II + d_IE,2,1
+G_D__Base__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Base,None,g_II + d_IE,2,2
+G_D__Base__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Base,None,g_II + d_IE,2,3
+G_D__Base__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Base,None,g_II + d_IE,2,4
+G_D__Rate_3M_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change,d_Rate_3M,g_II + d_IE + d_Rate_3M,3,1
+G_D__Rate_3M_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change,d_Rate_3M,g_II + d_IE + d_Rate_3M,3,2
+G_D__Rate_3M_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change,d_Rate_3M,g_II + d_IE + d_Rate_3M,3,3
+G_D__Rate_3M_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change,d_Rate_3M,g_II + d_IE + d_Rate_3M,3,4
+G_D__Rate_10Y_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_10Y_change,d_Rate_10Y,g_II + d_IE + d_Rate_10Y,3,1
+G_D__Rate_10Y_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_10Y_change,d_Rate_10Y,g_II + d_IE + d_Rate_10Y,3,2
+G_D__Rate_10Y_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_10Y_change,d_Rate_10Y,g_II + d_IE + d_Rate_10Y,3,3
+G_D__Rate_10Y_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_10Y_change,d_Rate_10Y,g_II + d_IE + d_Rate_10Y,3,4
+G_D__BBB_Yield_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Yield_change,d_BBB_Yield,g_II + d_IE + d_BBB_Yield,3,1
+G_D__BBB_Yield_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Yield_change,d_BBB_Yield,g_II + d_IE + d_BBB_Yield,3,2
+G_D__BBB_Yield_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Yield_change,d_BBB_Yield,g_II + d_IE + d_BBB_Yield,3,3
+G_D__BBB_Yield_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Yield_change,d_BBB_Yield,g_II + d_IE + d_BBB_Yield,3,4
+G_D__Term_Spread_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Term_Spread_change,d_Term_Spread,g_II + d_IE + d_Term_Spread,3,1
+G_D__Term_Spread_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Term_Spread_change,d_Term_Spread,g_II + d_IE + d_Term_Spread,3,2
+G_D__Term_Spread_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Term_Spread_change,d_Term_Spread,g_II + d_IE + d_Term_Spread,3,3
+G_D__Term_Spread_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Term_Spread_change,d_Term_Spread,g_II + d_IE + d_Term_Spread,3,4
+G_D__BBB_Spread_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Spread_change,d_BBB_Spread,g_II + d_IE + d_BBB_Spread,3,1
+G_D__BBB_Spread_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Spread_change,d_BBB_Spread,g_II + d_IE + d_BBB_Spread,3,2
+G_D__BBB_Spread_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Spread_change,d_BBB_Spread,g_II + d_IE + d_BBB_Spread,3,3
+G_D__BBB_Spread_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,BBB_Spread_change,d_BBB_Spread,g_II + d_IE + d_BBB_Spread,3,4
+G_D__VIX_level__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,VIX_level,VIX,g_II + d_IE + VIX,3,1
+G_D__VIX_level__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,VIX_level,VIX,g_II + d_IE + VIX,3,2
+G_D__VIX_level__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,VIX_level,VIX,g_II + d_IE + VIX,3,3
+G_D__VIX_level__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,VIX_level,VIX,g_II + d_IE + VIX,3,4
+G_D__Rate_3M_and_10Y_changes__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + d_IE + d_Rate_3M + d_Rate_10Y,4,1
+G_D__Rate_3M_and_10Y_changes__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + d_IE + d_Rate_3M + d_Rate_10Y,4,2
+G_D__Rate_3M_and_10Y_changes__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + d_IE + d_Rate_3M + d_Rate_10Y,4,3
+G_D__Rate_3M_and_10Y_changes__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + d_IE + d_Rate_3M + d_Rate_10Y,4,4
+G_D__Rate_3M_change_and_Term_Spread_change__VAR1,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + d_IE + d_Rate_3M + d_Term_Spread,4,1
+G_D__Rate_3M_change_and_Term_Spread_change__VAR2,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + d_IE + d_Rate_3M + d_Term_Spread,4,2
+G_D__Rate_3M_change_and_Term_Spread_change__VAR3,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + d_IE + d_Rate_3M + d_Term_Spread,4,3
+G_D__Rate_3M_change_and_Term_Spread_change__VAR4,Differenced_Target_VAR,G_D,LogDifference,Difference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + d_IE + d_Rate_3M + d_Term_Spread,4,4
+G_G__Base__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Base,None,g_II + g_IE,2,1
+G_G__Base__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Base,None,g_II + g_IE,2,2
+G_G__Base__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Base,None,g_II + g_IE,2,3
+G_G__Base__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Base,None,g_II + g_IE,2,4
+G_G__Rate_3M_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change,d_Rate_3M,g_II + g_IE + d_Rate_3M,3,1
+G_G__Rate_3M_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change,d_Rate_3M,g_II + g_IE + d_Rate_3M,3,2
+G_G__Rate_3M_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change,d_Rate_3M,g_II + g_IE + d_Rate_3M,3,3
+G_G__Rate_3M_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change,d_Rate_3M,g_II + g_IE + d_Rate_3M,3,4
+G_G__Rate_10Y_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_10Y_change,d_Rate_10Y,g_II + g_IE + d_Rate_10Y,3,1
+G_G__Rate_10Y_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_10Y_change,d_Rate_10Y,g_II + g_IE + d_Rate_10Y,3,2
+G_G__Rate_10Y_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_10Y_change,d_Rate_10Y,g_II + g_IE + d_Rate_10Y,3,3
+G_G__Rate_10Y_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_10Y_change,d_Rate_10Y,g_II + g_IE + d_Rate_10Y,3,4
+G_G__BBB_Yield_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Yield_change,d_BBB_Yield,g_II + g_IE + d_BBB_Yield,3,1
+G_G__BBB_Yield_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Yield_change,d_BBB_Yield,g_II + g_IE + d_BBB_Yield,3,2
+G_G__BBB_Yield_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Yield_change,d_BBB_Yield,g_II + g_IE + d_BBB_Yield,3,3
+G_G__BBB_Yield_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Yield_change,d_BBB_Yield,g_II + g_IE + d_BBB_Yield,3,4
+G_G__Term_Spread_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Term_Spread_change,d_Term_Spread,g_II + g_IE + d_Term_Spread,3,1
+G_G__Term_Spread_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Term_Spread_change,d_Term_Spread,g_II + g_IE + d_Term_Spread,3,2
+G_G__Term_Spread_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Term_Spread_change,d_Term_Spread,g_II + g_IE + d_Term_Spread,3,3
+G_G__Term_Spread_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Term_Spread_change,d_Term_Spread,g_II + g_IE + d_Term_Spread,3,4
+G_G__BBB_Spread_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Spread_change,d_BBB_Spread,g_II + g_IE + d_BBB_Spread,3,1
+G_G__BBB_Spread_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Spread_change,d_BBB_Spread,g_II + g_IE + d_BBB_Spread,3,2
+G_G__BBB_Spread_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Spread_change,d_BBB_Spread,g_II + g_IE + d_BBB_Spread,3,3
+G_G__BBB_Spread_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,BBB_Spread_change,d_BBB_Spread,g_II + g_IE + d_BBB_Spread,3,4
+G_G__VIX_level__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,VIX_level,VIX,g_II + g_IE + VIX,3,1
+G_G__VIX_level__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,VIX_level,VIX,g_II + g_IE + VIX,3,2
+G_G__VIX_level__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,VIX_level,VIX,g_II + g_IE + VIX,3,3
+G_G__VIX_level__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,VIX_level,VIX,g_II + g_IE + VIX,3,4
+G_G__Rate_3M_and_10Y_changes__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + g_IE + d_Rate_3M + d_Rate_10Y,4,1
+G_G__Rate_3M_and_10Y_changes__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + g_IE + d_Rate_3M + d_Rate_10Y,4,2
+G_G__Rate_3M_and_10Y_changes__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + g_IE + d_Rate_3M + d_Rate_10Y,4,3
+G_G__Rate_3M_and_10Y_changes__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_and_10Y_changes,d_Rate_3M + d_Rate_10Y,g_II + g_IE + d_Rate_3M + d_Rate_10Y,4,4
+G_G__Rate_3M_change_and_Term_Spread_change__VAR1,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + g_IE + d_Rate_3M + d_Term_Spread,4,1
+G_G__Rate_3M_change_and_Term_Spread_change__VAR2,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + g_IE + d_Rate_3M + d_Term_Spread,4,2
+G_G__Rate_3M_change_and_Term_Spread_change__VAR3,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + g_IE + d_Rate_3M + d_Term_Spread,4,3
+G_G__Rate_3M_change_and_Term_Spread_change__VAR4,Differenced_Target_VAR,G_G,LogDifference,LogDifference,Rate_3M_change_and_Term_Spread_change,d_Rate_3M + d_Term_Spread,g_II + g_IE + d_Rate_3M + d_Term_Spread,4,4

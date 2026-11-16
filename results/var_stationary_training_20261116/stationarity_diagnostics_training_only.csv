@@ -1,0 +1,10 @@
+Variable,N,ADF_Deterministic,ADF_SelectedLags,ADF_Statistic,ADF_5pct_Critical,ADF_Reject_UnitRoot_5pct,KPSS_Null,KPSS_p_value,KPSS_Reject_Stationarity_5pct
+II_first_difference,61,drift,4,-2.9111862034766403,-2.89,TRUE,Level,0.05989160256483732,FALSE
+II_log_difference,61,drift,4,-3.843668745629221,-2.89,TRUE,Level,0.1,FALSE
+IE_second_difference,60,drift,4,-4.208295329177011,-2.89,TRUE,Level,0.1,FALSE
+IE_log_second_difference,60,drift,4,-6.139053779952578,-2.89,TRUE,Level,0.1,FALSE
+d_Rate_3M,61,drift,4,-3.074930159387084,-2.89,TRUE,Level,0.1,FALSE
+d_Rate_10Y,61,drift,4,-4.838847316434562,-2.89,TRUE,Level,0.1,FALSE
+d_Term_Spread,61,drift,4,-4.894208891160671,-2.89,TRUE,Level,0.1,FALSE
+d_BBB_Spread,61,drift,4,-5.264929388899,-2.89,TRUE,Level,0.1,FALSE
+d_BBB_Yield_sensitivity_only,61,drift,4,-4.356976069676845,-2.89,TRUE,Level,0.047726190921437386,TRUE

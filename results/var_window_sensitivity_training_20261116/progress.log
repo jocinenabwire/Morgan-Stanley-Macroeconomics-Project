@@ -1,0 +1,21 @@
+Expected top-50 re-estimation fits: 3960; windows=24,28; origins=20
+PROGRESS 5% (198/3960 VAR fits), elapsed 2.2 sec
+PROGRESS 10% (396/3960 VAR fits), elapsed 3.7 sec
+PROGRESS 15% (594/3960 VAR fits), elapsed 5.2 sec
+PROGRESS 20% (792/3960 VAR fits), elapsed 6.6 sec
+PROGRESS 25% (990/3960 VAR fits), elapsed 8.2 sec
+PROGRESS 30% (1188/3960 VAR fits), elapsed 9.7 sec
+PROGRESS 35% (1386/3960 VAR fits), elapsed 11.3 sec
+PROGRESS 40% (1584/3960 VAR fits), elapsed 12.9 sec
+PROGRESS 45% (1782/3960 VAR fits), elapsed 14.7 sec
+PROGRESS 50% (1980/3960 VAR fits), elapsed 16.6 sec
+PROGRESS 55% (2178/3960 VAR fits), elapsed 18.3 sec
+PROGRESS 60% (2376/3960 VAR fits), elapsed 19.8 sec
+PROGRESS 65% (2574/3960 VAR fits), elapsed 21.5 sec
+PROGRESS 70% (2772/3960 VAR fits), elapsed 23.1 sec
+PROGRESS 75% (2970/3960 VAR fits), elapsed 24.6 sec
+PROGRESS 80% (3168/3960 VAR fits), elapsed 26.1 sec
+PROGRESS 85% (3366/3960 VAR fits), elapsed 27.8 sec
+PROGRESS 90% (3564/3960 VAR fits), elapsed 29.2 sec
+PROGRESS 95% (3762/3960 VAR fits), elapsed 30.8 sec
+PROGRESS 100% (3960/3960 VAR fits), elapsed 32.5 sec

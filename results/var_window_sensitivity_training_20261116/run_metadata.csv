@@ -1,0 +1,2 @@
+Run_Date,Training_Start,Training_End,Training_Rows,Holdout_Loaded,Windows,Horizon,Common_Origins,First_Common_Origin,Last_Common_Origin,Top50_Forms_Per_Pair,Refit_Windows,Model_Window_Tasks,Expected_VAR_Fits,Successful_VAR_Fits,Failed_VAR_Fits,Warned_VAR_Fits
+2026-11-16,2009 Q1,2024 Q2,62,FALSE,"24,28,32",9,20,2017 Q2,2022 Q1,50,"24,28",198,3960,3960,0,0

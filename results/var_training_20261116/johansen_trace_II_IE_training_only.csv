@@ -1,0 +1,5 @@
+K_Level_VAR_Lags,Null_Hypothesis,Trace_Statistic,Critical_5pct,Reject_Null_5pct
+2,r <= 1 |,5.5237338075270594,9.24,FALSE
+2,r = 0  |,12.913013057840002,19.96,FALSE
+3,r <= 1 |,5.927069635950102,9.24,FALSE
+3,r = 0  |,13.992785137270502,19.96,FALSE

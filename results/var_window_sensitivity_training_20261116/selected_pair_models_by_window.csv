@@ -1,0 +1,7 @@
+Pair,Window,Model_ID,Pair_Joint_MASE,Stable_Root_Rate,Selection_Rule
+Interest,24,II_D__IE_G2__Base__VAR2,9.877008434646875,1,Lowest joint MASE among feasible models stable at all common origins
+Interest,28,II_D__IE_G2__Base__VAR2,9.328113486931931,1,Lowest joint MASE among feasible models stable at all common origins
+Interest,32,II_D__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR2,9.085178341740118,1,Lowest joint MASE among feasible models stable at all common origins
+Noninterest,24,NIR_D__NIE_G__d_Rate_10Y__VAR2,1.2118702167817021,1,Lowest joint MASE among feasible models stable at all common origins
+Noninterest,28,NIR_D__NIE_G__d_Rate_10Y__VAR2,1.1399570753148223,1,Lowest joint MASE among feasible models stable at all common origins
+Noninterest,32,NIR_D__NIE_G__d_Rate_10Y__VAR3,1.10196342197251,1,Lowest joint MASE among feasible models stable at all common origins

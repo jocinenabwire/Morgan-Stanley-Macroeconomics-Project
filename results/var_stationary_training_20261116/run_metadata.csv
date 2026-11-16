@@ -1,0 +1,2 @@
+Run_Date,Training_Start,Training_End,Training_Rows,Holdout_Loaded,Window,Horizon,Common_Origins,First_Common_Origin,Last_Common_Origin,Maximum_Macro_Variables,Candidate_Specifications,Expected_VAR_Fits,Successful_VAR_Fits,Failed_VAR_Fits,Warned_VAR_Fits,Elapsed_Seconds
+2026-11-16,2009 Q1,2024 Q2,62,FALSE,32,9,20,2017 Q2,2022 Q1,2,176,3520,3520,0,0,31.392

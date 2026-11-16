@@ -1,0 +1,177 @@
+Model_ID,II_Transform,IE_Transform,Macro_System,Macro_Variables,Endogenous_Variables,Number_Endogenous,Number_Macro,P,Residual_DF
+II_D__IE_D2__Base__VAR1,II_D,IE_D2,Base,None,d_II + dd_IE,2,0,1,29
+II_D__IE_D2__Base__VAR2,II_D,IE_D2,Base,None,d_II + dd_IE,2,0,2,27
+II_D__IE_D2__Base__VAR3,II_D,IE_D2,Base,None,d_II + dd_IE,2,0,3,25
+II_D__IE_D2__Base__VAR4,II_D,IE_D2,Base,None,d_II + dd_IE,2,0,4,23
+II_D__IE_D2__d_Rate_3M__VAR1,II_D,IE_D2,d_Rate_3M,d_Rate_3M,d_II + dd_IE + d_Rate_3M,3,1,1,28
+II_D__IE_D2__d_Rate_3M__VAR2,II_D,IE_D2,d_Rate_3M,d_Rate_3M,d_II + dd_IE + d_Rate_3M,3,1,2,25
+II_D__IE_D2__d_Rate_3M__VAR3,II_D,IE_D2,d_Rate_3M,d_Rate_3M,d_II + dd_IE + d_Rate_3M,3,1,3,22
+II_D__IE_D2__d_Rate_3M__VAR4,II_D,IE_D2,d_Rate_3M,d_Rate_3M,d_II + dd_IE + d_Rate_3M,3,1,4,19
+II_D__IE_D2__d_Rate_10Y__VAR1,II_D,IE_D2,d_Rate_10Y,d_Rate_10Y,d_II + dd_IE + d_Rate_10Y,3,1,1,28
+II_D__IE_D2__d_Rate_10Y__VAR2,II_D,IE_D2,d_Rate_10Y,d_Rate_10Y,d_II + dd_IE + d_Rate_10Y,3,1,2,25
+II_D__IE_D2__d_Rate_10Y__VAR3,II_D,IE_D2,d_Rate_10Y,d_Rate_10Y,d_II + dd_IE + d_Rate_10Y,3,1,3,22
+II_D__IE_D2__d_Rate_10Y__VAR4,II_D,IE_D2,d_Rate_10Y,d_Rate_10Y,d_II + dd_IE + d_Rate_10Y,3,1,4,19
+II_D__IE_D2__d_Term_Spread__VAR1,II_D,IE_D2,d_Term_Spread,d_Term_Spread,d_II + dd_IE + d_Term_Spread,3,1,1,28
+II_D__IE_D2__d_Term_Spread__VAR2,II_D,IE_D2,d_Term_Spread,d_Term_Spread,d_II + dd_IE + d_Term_Spread,3,1,2,25
+II_D__IE_D2__d_Term_Spread__VAR3,II_D,IE_D2,d_Term_Spread,d_Term_Spread,d_II + dd_IE + d_Term_Spread,3,1,3,22
+II_D__IE_D2__d_Term_Spread__VAR4,II_D,IE_D2,d_Term_Spread,d_Term_Spread,d_II + dd_IE + d_Term_Spread,3,1,4,19
+II_D__IE_D2__d_BBB_Spread__VAR1,II_D,IE_D2,d_BBB_Spread,d_BBB_Spread,d_II + dd_IE + d_BBB_Spread,3,1,1,28
+II_D__IE_D2__d_BBB_Spread__VAR2,II_D,IE_D2,d_BBB_Spread,d_BBB_Spread,d_II + dd_IE + d_BBB_Spread,3,1,2,25
+II_D__IE_D2__d_BBB_Spread__VAR3,II_D,IE_D2,d_BBB_Spread,d_BBB_Spread,d_II + dd_IE + d_BBB_Spread,3,1,3,22
+II_D__IE_D2__d_BBB_Spread__VAR4,II_D,IE_D2,d_BBB_Spread,d_BBB_Spread,d_II + dd_IE + d_BBB_Spread,3,1,4,19
+II_D__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR1,II_D,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,1,27
+II_D__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR2,II_D,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,2,23
+II_D__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR3,II_D,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,3,19
+II_D__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR4,II_D,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,4,15
+II_D__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR1,II_D,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,1,27
+II_D__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR2,II_D,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,2,23
+II_D__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR3,II_D,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,3,19
+II_D__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR4,II_D,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,4,15
+II_D__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR1,II_D,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,1,27
+II_D__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR2,II_D,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,2,23
+II_D__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR3,II_D,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,3,19
+II_D__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR4,II_D,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,4,15
+II_D__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR1,II_D,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,1,27
+II_D__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR2,II_D,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,2,23
+II_D__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR3,II_D,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,3,19
+II_D__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR4,II_D,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,4,15
+II_D__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR1,II_D,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,1,27
+II_D__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR2,II_D,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,2,23
+II_D__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR3,II_D,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,3,19
+II_D__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR4,II_D,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,4,15
+II_D__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR1,II_D,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,1,27
+II_D__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR2,II_D,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,2,23
+II_D__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR3,II_D,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,3,19
+II_D__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR4,II_D,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,4,15
+II_G__IE_D2__Base__VAR1,II_G,IE_D2,Base,None,g_II + dd_IE,2,0,1,29
+II_G__IE_D2__Base__VAR2,II_G,IE_D2,Base,None,g_II + dd_IE,2,0,2,27
+II_G__IE_D2__Base__VAR3,II_G,IE_D2,Base,None,g_II + dd_IE,2,0,3,25
+II_G__IE_D2__Base__VAR4,II_G,IE_D2,Base,None,g_II + dd_IE,2,0,4,23
+II_G__IE_D2__d_Rate_3M__VAR1,II_G,IE_D2,d_Rate_3M,d_Rate_3M,g_II + dd_IE + d_Rate_3M,3,1,1,28
+II_G__IE_D2__d_Rate_3M__VAR2,II_G,IE_D2,d_Rate_3M,d_Rate_3M,g_II + dd_IE + d_Rate_3M,3,1,2,25
+II_G__IE_D2__d_Rate_3M__VAR3,II_G,IE_D2,d_Rate_3M,d_Rate_3M,g_II + dd_IE + d_Rate_3M,3,1,3,22
+II_G__IE_D2__d_Rate_3M__VAR4,II_G,IE_D2,d_Rate_3M,d_Rate_3M,g_II + dd_IE + d_Rate_3M,3,1,4,19
+II_G__IE_D2__d_Rate_10Y__VAR1,II_G,IE_D2,d_Rate_10Y,d_Rate_10Y,g_II + dd_IE + d_Rate_10Y,3,1,1,28
+II_G__IE_D2__d_Rate_10Y__VAR2,II_G,IE_D2,d_Rate_10Y,d_Rate_10Y,g_II + dd_IE + d_Rate_10Y,3,1,2,25
+II_G__IE_D2__d_Rate_10Y__VAR3,II_G,IE_D2,d_Rate_10Y,d_Rate_10Y,g_II + dd_IE + d_Rate_10Y,3,1,3,22
+II_G__IE_D2__d_Rate_10Y__VAR4,II_G,IE_D2,d_Rate_10Y,d_Rate_10Y,g_II + dd_IE + d_Rate_10Y,3,1,4,19
+II_G__IE_D2__d_Term_Spread__VAR1,II_G,IE_D2,d_Term_Spread,d_Term_Spread,g_II + dd_IE + d_Term_Spread,3,1,1,28
+II_G__IE_D2__d_Term_Spread__VAR2,II_G,IE_D2,d_Term_Spread,d_Term_Spread,g_II + dd_IE + d_Term_Spread,3,1,2,25
+II_G__IE_D2__d_Term_Spread__VAR3,II_G,IE_D2,d_Term_Spread,d_Term_Spread,g_II + dd_IE + d_Term_Spread,3,1,3,22
+II_G__IE_D2__d_Term_Spread__VAR4,II_G,IE_D2,d_Term_Spread,d_Term_Spread,g_II + dd_IE + d_Term_Spread,3,1,4,19
+II_G__IE_D2__d_BBB_Spread__VAR1,II_G,IE_D2,d_BBB_Spread,d_BBB_Spread,g_II + dd_IE + d_BBB_Spread,3,1,1,28
+II_G__IE_D2__d_BBB_Spread__VAR2,II_G,IE_D2,d_BBB_Spread,d_BBB_Spread,g_II + dd_IE + d_BBB_Spread,3,1,2,25
+II_G__IE_D2__d_BBB_Spread__VAR3,II_G,IE_D2,d_BBB_Spread,d_BBB_Spread,g_II + dd_IE + d_BBB_Spread,3,1,3,22
+II_G__IE_D2__d_BBB_Spread__VAR4,II_G,IE_D2,d_BBB_Spread,d_BBB_Spread,g_II + dd_IE + d_BBB_Spread,3,1,4,19
+II_G__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR1,II_G,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,1,27
+II_G__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR2,II_G,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,2,23
+II_G__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR3,II_G,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,3,19
+II_G__IE_D2__d_Rate_3M_and_d_Rate_10Y__VAR4,II_G,IE_D2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + dd_IE + d_Rate_3M + d_Rate_10Y,4,2,4,15
+II_G__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR1,II_G,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,1,27
+II_G__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR2,II_G,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,2,23
+II_G__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR3,II_G,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,3,19
+II_G__IE_D2__d_Rate_3M_and_d_Term_Spread__VAR4,II_G,IE_D2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + dd_IE + d_Rate_3M + d_Term_Spread,4,2,4,15
+II_G__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR1,II_G,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,1,27
+II_G__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR2,II_G,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,2,23
+II_G__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR3,II_G,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,3,19
+II_G__IE_D2__d_Rate_3M_and_d_BBB_Spread__VAR4,II_G,IE_D2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + dd_IE + d_Rate_3M + d_BBB_Spread,4,2,4,15
+II_G__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR1,II_G,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,1,27
+II_G__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR2,II_G,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,2,23
+II_G__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR3,II_G,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,3,19
+II_G__IE_D2__d_Rate_10Y_and_d_Term_Spread__VAR4,II_G,IE_D2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + dd_IE + d_Rate_10Y + d_Term_Spread,4,2,4,15
+II_G__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR1,II_G,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,1,27
+II_G__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR2,II_G,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,2,23
+II_G__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR3,II_G,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,3,19
+II_G__IE_D2__d_Rate_10Y_and_d_BBB_Spread__VAR4,II_G,IE_D2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + dd_IE + d_Rate_10Y + d_BBB_Spread,4,2,4,15
+II_G__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR1,II_G,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,1,27
+II_G__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR2,II_G,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,2,23
+II_G__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR3,II_G,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,3,19
+II_G__IE_D2__d_Term_Spread_and_d_BBB_Spread__VAR4,II_G,IE_D2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + dd_IE + d_Term_Spread + d_BBB_Spread,4,2,4,15
+II_D__IE_G2__Base__VAR1,II_D,IE_G2,Base,None,d_II + ddlog_IE,2,0,1,29
+II_D__IE_G2__Base__VAR2,II_D,IE_G2,Base,None,d_II + ddlog_IE,2,0,2,27
+II_D__IE_G2__Base__VAR3,II_D,IE_G2,Base,None,d_II + ddlog_IE,2,0,3,25
+II_D__IE_G2__Base__VAR4,II_D,IE_G2,Base,None,d_II + ddlog_IE,2,0,4,23
+II_D__IE_G2__d_Rate_3M__VAR1,II_D,IE_G2,d_Rate_3M,d_Rate_3M,d_II + ddlog_IE + d_Rate_3M,3,1,1,28
+II_D__IE_G2__d_Rate_3M__VAR2,II_D,IE_G2,d_Rate_3M,d_Rate_3M,d_II + ddlog_IE + d_Rate_3M,3,1,2,25
+II_D__IE_G2__d_Rate_3M__VAR3,II_D,IE_G2,d_Rate_3M,d_Rate_3M,d_II + ddlog_IE + d_Rate_3M,3,1,3,22
+II_D__IE_G2__d_Rate_3M__VAR4,II_D,IE_G2,d_Rate_3M,d_Rate_3M,d_II + ddlog_IE + d_Rate_3M,3,1,4,19
+II_D__IE_G2__d_Rate_10Y__VAR1,II_D,IE_G2,d_Rate_10Y,d_Rate_10Y,d_II + ddlog_IE + d_Rate_10Y,3,1,1,28
+II_D__IE_G2__d_Rate_10Y__VAR2,II_D,IE_G2,d_Rate_10Y,d_Rate_10Y,d_II + ddlog_IE + d_Rate_10Y,3,1,2,25
+II_D__IE_G2__d_Rate_10Y__VAR3,II_D,IE_G2,d_Rate_10Y,d_Rate_10Y,d_II + ddlog_IE + d_Rate_10Y,3,1,3,22
+II_D__IE_G2__d_Rate_10Y__VAR4,II_D,IE_G2,d_Rate_10Y,d_Rate_10Y,d_II + ddlog_IE + d_Rate_10Y,3,1,4,19
+II_D__IE_G2__d_Term_Spread__VAR1,II_D,IE_G2,d_Term_Spread,d_Term_Spread,d_II + ddlog_IE + d_Term_Spread,3,1,1,28
+II_D__IE_G2__d_Term_Spread__VAR2,II_D,IE_G2,d_Term_Spread,d_Term_Spread,d_II + ddlog_IE + d_Term_Spread,3,1,2,25
+II_D__IE_G2__d_Term_Spread__VAR3,II_D,IE_G2,d_Term_Spread,d_Term_Spread,d_II + ddlog_IE + d_Term_Spread,3,1,3,22
+II_D__IE_G2__d_Term_Spread__VAR4,II_D,IE_G2,d_Term_Spread,d_Term_Spread,d_II + ddlog_IE + d_Term_Spread,3,1,4,19
+II_D__IE_G2__d_BBB_Spread__VAR1,II_D,IE_G2,d_BBB_Spread,d_BBB_Spread,d_II + ddlog_IE + d_BBB_Spread,3,1,1,28
+II_D__IE_G2__d_BBB_Spread__VAR2,II_D,IE_G2,d_BBB_Spread,d_BBB_Spread,d_II + ddlog_IE + d_BBB_Spread,3,1,2,25
+II_D__IE_G2__d_BBB_Spread__VAR3,II_D,IE_G2,d_BBB_Spread,d_BBB_Spread,d_II + ddlog_IE + d_BBB_Spread,3,1,3,22
+II_D__IE_G2__d_BBB_Spread__VAR4,II_D,IE_G2,d_BBB_Spread,d_BBB_Spread,d_II + ddlog_IE + d_BBB_Spread,3,1,4,19
+II_D__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR1,II_D,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,1,27
+II_D__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR2,II_D,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,2,23
+II_D__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR3,II_D,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,3,19
+II_D__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR4,II_D,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,d_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,4,15
+II_D__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR1,II_D,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,1,27
+II_D__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR2,II_D,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,2,23
+II_D__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR3,II_D,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,3,19
+II_D__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR4,II_D,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,d_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,4,15
+II_D__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR1,II_D,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,1,27
+II_D__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR2,II_D,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,2,23
+II_D__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR3,II_D,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,3,19
+II_D__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR4,II_D,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,d_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,4,15
+II_D__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR1,II_D,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,1,27
+II_D__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR2,II_D,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,2,23
+II_D__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR3,II_D,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,3,19
+II_D__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR4,II_D,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,d_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,4,15
+II_D__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR1,II_D,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,1,27
+II_D__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR2,II_D,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,2,23
+II_D__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR3,II_D,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,3,19
+II_D__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR4,II_D,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,d_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,4,15
+II_D__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR1,II_D,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,1,27
+II_D__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR2,II_D,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,2,23
+II_D__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR3,II_D,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,3,19
+II_D__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR4,II_D,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,d_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,4,15
+II_G__IE_G2__Base__VAR1,II_G,IE_G2,Base,None,g_II + ddlog_IE,2,0,1,29
+II_G__IE_G2__Base__VAR2,II_G,IE_G2,Base,None,g_II + ddlog_IE,2,0,2,27
+II_G__IE_G2__Base__VAR3,II_G,IE_G2,Base,None,g_II + ddlog_IE,2,0,3,25
+II_G__IE_G2__Base__VAR4,II_G,IE_G2,Base,None,g_II + ddlog_IE,2,0,4,23
+II_G__IE_G2__d_Rate_3M__VAR1,II_G,IE_G2,d_Rate_3M,d_Rate_3M,g_II + ddlog_IE + d_Rate_3M,3,1,1,28
+II_G__IE_G2__d_Rate_3M__VAR2,II_G,IE_G2,d_Rate_3M,d_Rate_3M,g_II + ddlog_IE + d_Rate_3M,3,1,2,25
+II_G__IE_G2__d_Rate_3M__VAR3,II_G,IE_G2,d_Rate_3M,d_Rate_3M,g_II + ddlog_IE + d_Rate_3M,3,1,3,22
+II_G__IE_G2__d_Rate_3M__VAR4,II_G,IE_G2,d_Rate_3M,d_Rate_3M,g_II + ddlog_IE + d_Rate_3M,3,1,4,19
+II_G__IE_G2__d_Rate_10Y__VAR1,II_G,IE_G2,d_Rate_10Y,d_Rate_10Y,g_II + ddlog_IE + d_Rate_10Y,3,1,1,28
+II_G__IE_G2__d_Rate_10Y__VAR2,II_G,IE_G2,d_Rate_10Y,d_Rate_10Y,g_II + ddlog_IE + d_Rate_10Y,3,1,2,25
+II_G__IE_G2__d_Rate_10Y__VAR3,II_G,IE_G2,d_Rate_10Y,d_Rate_10Y,g_II + ddlog_IE + d_Rate_10Y,3,1,3,22
+II_G__IE_G2__d_Rate_10Y__VAR4,II_G,IE_G2,d_Rate_10Y,d_Rate_10Y,g_II + ddlog_IE + d_Rate_10Y,3,1,4,19
+II_G__IE_G2__d_Term_Spread__VAR1,II_G,IE_G2,d_Term_Spread,d_Term_Spread,g_II + ddlog_IE + d_Term_Spread,3,1,1,28
+II_G__IE_G2__d_Term_Spread__VAR2,II_G,IE_G2,d_Term_Spread,d_Term_Spread,g_II + ddlog_IE + d_Term_Spread,3,1,2,25
+II_G__IE_G2__d_Term_Spread__VAR3,II_G,IE_G2,d_Term_Spread,d_Term_Spread,g_II + ddlog_IE + d_Term_Spread,3,1,3,22
+II_G__IE_G2__d_Term_Spread__VAR4,II_G,IE_G2,d_Term_Spread,d_Term_Spread,g_II + ddlog_IE + d_Term_Spread,3,1,4,19
+II_G__IE_G2__d_BBB_Spread__VAR1,II_G,IE_G2,d_BBB_Spread,d_BBB_Spread,g_II + ddlog_IE + d_BBB_Spread,3,1,1,28
+II_G__IE_G2__d_BBB_Spread__VAR2,II_G,IE_G2,d_BBB_Spread,d_BBB_Spread,g_II + ddlog_IE + d_BBB_Spread,3,1,2,25
+II_G__IE_G2__d_BBB_Spread__VAR3,II_G,IE_G2,d_BBB_Spread,d_BBB_Spread,g_II + ddlog_IE + d_BBB_Spread,3,1,3,22
+II_G__IE_G2__d_BBB_Spread__VAR4,II_G,IE_G2,d_BBB_Spread,d_BBB_Spread,g_II + ddlog_IE + d_BBB_Spread,3,1,4,19
+II_G__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR1,II_G,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,1,27
+II_G__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR2,II_G,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,2,23
+II_G__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR3,II_G,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,3,19
+II_G__IE_G2__d_Rate_3M_and_d_Rate_10Y__VAR4,II_G,IE_G2,d_Rate_3M_and_d_Rate_10Y,d_Rate_3M + d_Rate_10Y,g_II + ddlog_IE + d_Rate_3M + d_Rate_10Y,4,2,4,15
+II_G__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR1,II_G,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,1,27
+II_G__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR2,II_G,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,2,23
+II_G__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR3,II_G,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,3,19
+II_G__IE_G2__d_Rate_3M_and_d_Term_Spread__VAR4,II_G,IE_G2,d_Rate_3M_and_d_Term_Spread,d_Rate_3M + d_Term_Spread,g_II + ddlog_IE + d_Rate_3M + d_Term_Spread,4,2,4,15
+II_G__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR1,II_G,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,1,27
+II_G__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR2,II_G,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,2,23
+II_G__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR3,II_G,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,3,19
+II_G__IE_G2__d_Rate_3M_and_d_BBB_Spread__VAR4,II_G,IE_G2,d_Rate_3M_and_d_BBB_Spread,d_Rate_3M + d_BBB_Spread,g_II + ddlog_IE + d_Rate_3M + d_BBB_Spread,4,2,4,15
+II_G__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR1,II_G,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,1,27
+II_G__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR2,II_G,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,2,23
+II_G__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR3,II_G,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,3,19
+II_G__IE_G2__d_Rate_10Y_and_d_Term_Spread__VAR4,II_G,IE_G2,d_Rate_10Y_and_d_Term_Spread,d_Rate_10Y + d_Term_Spread,g_II + ddlog_IE + d_Rate_10Y + d_Term_Spread,4,2,4,15
+II_G__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR1,II_G,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,1,27
+II_G__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR2,II_G,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,2,23
+II_G__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR3,II_G,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,3,19
+II_G__IE_G2__d_Rate_10Y_and_d_BBB_Spread__VAR4,II_G,IE_G2,d_Rate_10Y_and_d_BBB_Spread,d_Rate_10Y + d_BBB_Spread,g_II + ddlog_IE + d_Rate_10Y + d_BBB_Spread,4,2,4,15
+II_G__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR1,II_G,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,1,27
+II_G__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR2,II_G,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,2,23
+II_G__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR3,II_G,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,3,19
+II_G__IE_G2__d_Term_Spread_and_d_BBB_Spread__VAR4,II_G,IE_G2,d_Term_Spread_and_d_BBB_Spread,d_Term_Spread + d_BBB_Spread,g_II + ddlog_IE + d_Term_Spread + d_BBB_Spread,4,2,4,15

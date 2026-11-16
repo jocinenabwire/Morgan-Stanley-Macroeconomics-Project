@@ -1,0 +1,19 @@
+Panel,Window,Series,Value
+"Interest pair (II, IE, NII)",24,Mean of top 10 models,10.973600711009713
+"Interest pair (II, IE, NII)",28,Mean of top 10 models,10.121305530821866
+"Interest pair (II, IE, NII)",32,Mean of top 10 models,9.474863572509427
+"Interest pair (II, IE, NII)",24,Best feasible model,9.877008434646877
+"Interest pair (II, IE, NII)",28,Best feasible model,9.328113486931931
+"Interest pair (II, IE, NII)",32,Best feasible model,9.085178341740118
+"Non-interest pair (NIR, NIE, net non-interest)",24,Mean of top 10 models,1.2857317491383105
+"Non-interest pair (NIR, NIE, net non-interest)",28,Mean of top 10 models,1.1784774992791274
+"Non-interest pair (NIR, NIE, net non-interest)",32,Mean of top 10 models,1.1519830900379426
+"Non-interest pair (NIR, NIE, net non-interest)",24,Best feasible model,1.211870216781702
+"Non-interest pair (NIR, NIE, net non-interest)",28,Best feasible model,1.1399570753148225
+"Non-interest pair (NIR, NIE, net non-interest)",32,Best feasible model,1.10196342197251
+Total PPNR composite,24,Selected VAR composite,1.5780965664920317
+Total PPNR composite,24,Random-walk benchmark,1.0026555945880031
+Total PPNR composite,28,Selected VAR composite,1.4825829612111467
+Total PPNR composite,28,Random-walk benchmark,1.0026555945880031
+Total PPNR composite,32,Selected VAR composite,1.4948075434456098
+Total PPNR composite,32,Random-walk benchmark,1.0026555945880031
